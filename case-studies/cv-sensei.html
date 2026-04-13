@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CV Sensei — UX case study by Wiktoria Sudak. AI-powered CV coaching tool: from bootcamp group project to rigorous UX research."
+    />
+    <title>CV Sensei — Case Study | Wiktoria Sudak</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/icons/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+  </head>
+
+  <body>
+
+    <!-- ============================================================
+         NAVBAR
+    ============================================================ -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+
+        <a href="../index.html" class="nav-logo">[YN]</a>
+
+        <ul class="nav-links">
+          <li><a href="../index.html#work" class="nav-link">My Work</a></li>
+          <li>
+            <a
+              href="../resume.pdf"
+              class="nav-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Resume</a>
+          </li>
+          <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+      </div>
+    </nav>
+
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <header class="cs-hero-banner">
+      <div class="cs-hero">
+        <a href="../index.html#work" class="cs-nav-back">All Projects</a>
+        <p class="cs-hero-eyebrow">UX Design &amp; Development</p>
+        <h1 class="cs-hero-title">CV Sensei</h1>
+        <p class="cs-hero-tagline">
+          A conversational AI agent that acts as a personal CV coach: 
+          helping job seekers articulate achievements in compelling language,
+          optimize for ATS screening, prioritize content strategically,
+          and generate polished templates—enabling them to stand out to recruiters and land interviews with confidence.
+      </div>
+    </header><!-- /.cs-hero-banner -->
+
+
+    <!-- ============================================================
+         METADATA BAR
+    ============================================================ -->
+    <div class="cs-meta">
+      <div class="cs-meta-inner">
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Role</span>
+          <span class="cs-meta-value">UX Designer &amp; Developer</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Timeline</span>
+          <span class="cs-meta-value">2025</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Phase 1</span>
+          <span class="cs-meta-value">Group Bootcamp Project</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Phase 2</span>
+          <span class="cs-meta-value">Solo UX Research</span>
+        </div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Methods</span>
+          <span class="cs-meta-value">Qualitative Interviews · Persona Synthesis</span>
+        </div>
+      </div>
+    </div>
+
+
+    <hr class="cs-divider" />
+
+
+    <!-- ============================================================
+         SECTION 1: ORIGIN
+    ============================================================ -->
+    <section>
+      <div class="cs-section">
+
+        <p class="cs-section-eyebrow">Origin</p>
+        <h2 class="cs-section-title">A shared frustration, built into a product</h2>
+
+        <p class="cs-body">
+          CV Sensei started as a group project during a software development bootcamp.
+          All five of us shared the same frustration: <strong>updating and tailoring a CV felt
+          disproportionately time-consuming</strong> for something we had to do so often.
+          We validated this informally through conversations with fellow students and instructors,
+          identifying a clear shared pain point — and built a working AI-powered CV assistant
+          within a week.
+        </p>
+
+        <p class="cs-body">
+          The product worked, and the results were impressive. But as the bootcamp ended, one question stayed with me:
+        </p>
+
+        <div class="cs-callout">
+          <p>"What would make someone choose this over a free AI chatbot they already use?"</p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <hr class="cs-divider" />
+
+
+    <!-- ============================================================
+         SECTION 2: PROJECT OVERVIEW
+    ============================================================ -->
+    <section>
+      <div class="cs-section">
+
+        <p class="cs-section-eyebrow">Project Overview</p>
+
+        <h2 class="cs-section-title">The Problem</h2>
+        <p class="cs-body">
+          Job seekers today face a fundamental tension between personalisation and efficiency.
+          Whether they're a researcher whose academic writing gets filtered out by ATS systems,
+          a seasoned professional drowning in 20 years of experience they don't know how to cut,
+          a high-volume applicant who can't afford to rewrite from scratch for every role,
+          or a design-conscious candidate who loses hours to formatting before writing a single word —
+          the common thread is the same: the process of turning real experience into a compelling, targeted CV is broken.
+        </p>
+        <p class="cs-body">
+          Existing tools force a choice. Generic templates offer speed but no intelligence.
+          AI writing tools offer suggestions but no structure. Professional CV writers offer quality but at a cost most job seekers can't justify.
+          And through it all, the applicant is left alone to navigate ATS requirements, industry tone, keyword strategy, and layout — simultaneously.
+        </p>
+
+        <h2 class="cs-section-title">The Goal</h2>
+        <p class="cs-body">
+          An AI-powered CV coach that transforms CVs through intelligent coaching. Users upload their experience, get intelligent suggestions to strengthen their language, optimise for ATS screening, and receive polished templates—all through a guided chat experience tailored to their target role.
+        </p>
+
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="cs-video"
+        >
+          <source src="../assets/videos/new-cv-snapshot.mp4" type="video/mp4">
+        </video>
+
+      </div>
+    </section>
+
+
+    <hr class="cs-divider" />
+
+
+    <!-- ============================================================
+         SECTION 3: RESEARCH (was 2)
+    ============================================================ -->
+    <section>
+      <div class="cs-section">
+
+        <p class="cs-section-eyebrow">Research</p>
+        <h2 class="cs-section-title">From gut feeling to grounded research</h2>
+
+        <p class="cs-body">
+          That question became the foundation for a more rigorous second phase. After completing
+          a professional UX Design certification, I returned to the problem with a structured
+          research approach — this time as a solo project.
+        </p>
+
+        <p class="cs-body">
+          I conducted <strong>8 qualitative interviews</strong> across different industries and career
+          stages, using open-ended questions to surface honest attitudes around job hunting and CV writing.
+          The final question in particular was deliberate — grounding the speculative ("AI help") in
+          participants' actual mental models rather than assumed expectations.
+        </p>
+
+        <div class="cs-question-list">
+          <div class="cs-question-item">
+            <span class="cs-question-mark">"</span>
+            <span>Walk me through how you approach a job application.</span>
+          </div>
+          <div class="cs-question-item">
+            <span class="cs-question-mark">"</span>
+            <span>How do you feel when you have to update your CV?</span>
+          </div>
+          <div class="cs-question-item">
+            <span class="cs-question-mark">"</span>
+            <span>If AI were to help you with your CV, what would that ideally look like?</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <hr class="cs-divider" />
+
+
+    <!-- ============================================================
+         SECTION 3: KEY FINDINGS
+    ============================================================ -->
+    <section>
+      <div class="cs-section">
+
+        <p class="cs-section-eyebrow">Key Findings</p>
+        <h2 class="cs-section-title">Four pain points, three core tensions</h2>
+        <p class="cs-body">
+          Across all eight interviews, the same underlying conflicts surfaced repeatedly —
+          regardless of industry, seniority, or prior experience with AI tools.
+          The four pain points participants described weren't isolated frustrations.
+          They clustered into three deeper tensions that would go on to shape every design decision moving forward.
+        </p>
+
+        <div class="cs-tensions">
+
+          <div class="cs-tension-card">
+            <span class="cs-tension-number">01</span>
+            <h3 class="cs-tension-title">Effort vs. Outcome</h3>
+            <p class="cs-tension-body">
+              Users described CV writing as high-effort with unpredictable returns. 
+              Formatting alone — margins, spacing, template wrestling — 
+              consumed significant time before a single word of content was written. 
+              And when it came to deciding what to include and in what order, most participants had no clear framework, 
+              leaving them with unfocused CVs they weren't confident in.
+            </p>
+          </div>
+
+          <div class="cs-tension-card">
+            <span class="cs-tension-number">02</span>
+            <h3 class="cs-tension-title">Keyword Anxiety</h3>
+            <p class="cs-tension-body">
+              Most participants were aware that ATS filtering existed, but had little clarity on how to optimise for it. 
+              They knew missing keywords could mean rejection before any human saw their CV — but adding them felt inauthentic, 
+              and they didn't know which ones actually mattered for a given role.
+            </p>
+          </div>
+
+          <div class="cs-tension-card">
+            <span class="cs-tension-number">03</span>
+            <h3 class="cs-tension-title">Loss of Control</h3>
+            <p class="cs-tension-body">
+              Participants consistently undersold themselves through passive language — describing responsibilities rather than achievements. 
+              When asked about AI help, they didn't want it to write for them; they wanted it to coach them. 
+              The fear wasn't bad CVs — it was CVs that no longer sounded like them.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="cs-section">
+        <div class="cs-callout">
+          <p>"I apply to 30 jobs a week. Move one line in Word and the whole CV falls apart. I don't have time to reformat and rewrite for every role — just to get rejected by an algorithm before a human even sees my name."</p>
+        </div>
+      </div>
+      
+    </section>
+
+
+
+    <hr class="cs-divider" />
+
+
+    <!-- ============================================================
+         SECTION 4: DEFINING THE PROBLEM
+    ============================================================ -->
+    <section>
+      <div class="cs-section">
+
+        <p class="cs-section-eyebrow">Defining the Problem</p>
+        <h2 class="cs-section-title">User Personas</h2>
+        <p class="cs-body">
+          I synthesised findings by identifying behavioural patterns and grouping them into
+          <strong>four distinct user personas</strong> — each representing a different relationship
+          with the CV writing process.
+        </p>
+
+        <div class="cs-persona-carousel" aria-label="User personas carousel">
+          <div class="cs-persona-track">
+
+            <div class="cs-persona-card">
+              <img src="../assets/images/cv-sensei/personas/Persona_1.png" alt="Persona 1 — The Anxious Applicant" class="cs-persona-img" />
+              <span class="cs-persona-label">Persona 1</span>
+              <h3 class="cs-persona-name">The Anxious Applicant</h3>
+              <p class="cs-persona-desc">
+                Placeholder — add persona description, goals, frustrations, and key behaviours here.
+              </p>
+            </div>
+
+            <div class="cs-persona-card">
+              <img src="../assets/images/cv-sensei/personas/Persona_2.png" alt="Persona 2 — The Career Switcher" class="cs-persona-img" />
+              <span class="cs-persona-label">Persona 2</span>
+              <h3 class="cs-persona-name">The Career Switcher</h3>
+              <p class="cs-persona-desc">
+                Placeholder — add persona description, goals, frustrations, and key behaviours here.
+              </p>
+            </div>
+
+            <div class="cs-persona-card">
+              <img src="../assets/images/cv-sensei/personas/Persona_3.png" alt="Persona 3 — The Passive Optimiser" class="cs-persona-img" />
+              <span class="cs-persona-label">Persona 3</span>
+              <h3 class="cs-persona-name">The Passive Optimiser</h3>
+              <p class="cs-persona-desc">
+                Placeholder — add persona description, goals, frustrations, and key behaviours here.
+              </p>
+            </div>
+
+            <div class="cs-persona-card">
+              <img src="../assets/images/cv-sensei/personas/Persona_4.png" alt="Persona 4 — The Confident Veteran" class="cs-persona-img" />
+              <span class="cs-persona-label">Persona 4</span>
+              <h3 class="cs-persona-name">The Confident Veteran</h3>
+              <p class="cs-persona-desc">
+                Placeholder — add persona description, goals, frustrations, and key behaviours here.
+              </p>
+            </div>
+
+          </div>
+
+          <div class="cs-persona-nav">
+            <button class="cs-persona-btn cs-persona-btn--prev" aria-label="Previous persona">&#8592;</button>
+            <div class="cs-persona-dots">
+              <button class="cs-persona-dot active" aria-label="Go to persona 1"></button>
+              <button class="cs-persona-dot" aria-label="Go to persona 2"></button>
+              <button class="cs-persona-dot" aria-label="Go to persona 3"></button>
+              <button class="cs-persona-dot" aria-label="Go to persona 4"></button>
+            </div>
+            <button class="cs-persona-btn cs-persona-btn--next" aria-label="Next persona">&#8594;</button>
+          </div>
+        </div>
+
+        <h2 class="cs-section-title">From research to a design focus</h2>
+
+        <p class="cs-body">
+          With four personas mapped and three recurring tensions identified, the next step was grounding the design challenge in a specific user reality — before opening it back up into opportunity space.
+        </p>
+
+        <div class="cs-problem-statement">
+          <p class="cs-problem-label">Problem Statement</p>
+          <blockquote class="cs-problem-quote">
+            Luca is a Sales Executive applying to over 30 jobs a week who needs a faster way to tailor his CV for each role and pass ATS screening, because rewriting from scratch every time simply isn't sustainable — and he keeps getting rejected before anyone reads his name.
+          </blockquote>
+        </div>
+
+        <h2 class="cs-section-title">Three tensions, three design questions</h2>
+
+        <p class="cs-body">
+          Each HMW question maps directly to one of the three core tensions surfaced in research — reframing a user pain point as a design opportunity.
+        </p>
+
+        <div class="cs-hmw-list">
+
+          <div class="cs-hmw-item">
+            <div class="cs-hmw-header">
+              <span class="cs-hmw-number">HMW 01</span>
+              <span class="cs-hmw-cluster">Effort vs. Outcome</span>
+            </div>
+            <p class="cs-hmw-question">How might we reduce the time and cognitive load of CV editing without making the output feel generic or AI-generated?</p>
+          </div>
+
+          <div class="cs-hmw-item">
+            <div class="cs-hmw-header">
+              <span class="cs-hmw-number">HMW 02</span>
+              <span class="cs-hmw-cluster">Keyword Anxiety</span>
+            </div>
+            <p class="cs-hmw-question">How might we surface ATS keyword gaps in a way that feels actionable rather than overwhelming — and that preserves the user's authentic voice?</p>
+          </div>
+
+          <div class="cs-hmw-item">
+            <div class="cs-hmw-header">
+              <span class="cs-hmw-number">HMW 03</span>
+              <span class="cs-hmw-cluster">Loss of Control</span>
+            </div>
+            <p class="cs-hmw-question">How might we design an AI collaboration model where users feel like the author, not the passenger?</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <hr class="cs-divider" />
+
+
+    <!-- ============================================================
+         SECTIONS TO COME — Placeholders
+    ============================================================ -->
+    <section>
+      <div class="cs-section">
+
+        <p class="cs-section-eyebrow">Coming Up</p>
+        <h2 class="cs-section-title">More to follow</h2>
+        <p class="cs-body">
+          The remaining sections of this case study are in progress. Add your content for:
+          problem framing, design decisions, prototypes, testing, and outcomes below.
+        </p>
+
+        <div class="cs-placeholder-stack">
+          <div class="cs-placeholder">
+            <p class="cs-placeholder-label">Problem Definition</p>
+            <p class="cs-placeholder-text">HMW statements, design principles, prioritisation</p>
+          </div>
+          <div class="cs-placeholder">
+            <p class="cs-placeholder-label">Design &amp; Ideation</p>
+            <p class="cs-placeholder-text">User flows, sketches, wireframes</p>
+          </div>
+          <div class="cs-placeholder">
+            <p class="cs-placeholder-label">Prototyping &amp; Testing</p>
+            <p class="cs-placeholder-text">Usability testing rounds, iterations</p>
+          </div>
+          <div class="cs-placeholder">
+            <p class="cs-placeholder-label">Outcomes &amp; Reflections</p>
+            <p class="cs-placeholder-text">Key learnings, what I'd do differently, next steps</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <hr class="cs-divider" />
+
+
+    <!-- ============================================================
+         FOOTER CTA
+    ============================================================ -->
+    <div class="cs-nav-cta">
+      <p>Interested in working together?</p>
+      <a href="../index.html#contact" class="btn btn-primary">Get in touch</a>
+    </div>
+
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-copy">
+          &copy; <span id="footer-year"></span> Wiktoria Sudak. Designed &amp; built by me.
+        </p>
+        <ul class="footer-links">
+          <li>
+            <a
+              href="https://linkedin.com/in/yourhandle"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >LinkedIn</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+    <script>
+      document.getElementById('footer-year').textContent = new Date().getFullYear();
+    </script>
+    <script>
+      (function () {
+        const carousel = document.querySelector('.cs-persona-carousel');
+        if (!carousel) return;
+
+        const track = carousel.querySelector('.cs-persona-track');
+        const cards = Array.from(track.querySelectorAll('.cs-persona-card'));
+        const dots = Array.from(carousel.querySelectorAll('.cs-persona-dot'));
+        const prevBtn = carousel.querySelector('.cs-persona-btn--prev');
+        const nextBtn = carousel.querySelector('.cs-persona-btn--next');
+
+        function visibleCount() {
+          return window.innerWidth <= 640 ? 1 : 2;
+        }
+
+        const total = cards.length;
+        let current = 0;
+
+        function maxIndex() {
+          return total - visibleCount();
+        }
+
+        function goTo(index) {
+          current = Math.max(0, Math.min(index, maxIndex()));
+          const cardWidth = cards[0].getBoundingClientRect().width;
+          const gap = parseFloat(getComputedStyle(track).gap) || 0;
+          track.style.transform = `translateX(-${current * (cardWidth + gap)}px)`;
+          dots.forEach((d, i) => d.classList.toggle('active', i === current));
+        }
+
+        prevBtn.addEventListener('click', () => goTo(current - 1));
+        nextBtn.addEventListener('click', () => goTo(current + 1));
+        dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+
+        window.addEventListener('resize', () => goTo(current));
+      })();
+    </script>
+
+  </body>
+</html>

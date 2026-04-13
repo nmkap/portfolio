@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wiktoria Sudak — UX Developer portfolio. Designing and building thoughtful digital experiences."
+    />
+    <title>Wiktoria Sudak — UX Developer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+
+  <body>
+
+    <!-- ============================================================
+         NAVBAR
+    ============================================================ -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+
+        <a href="#hero" class="nav-logo">[YN]</a>
+
+        <ul class="nav-links">
+          <li><a href="#work" class="nav-link scroll-to">My Work</a></li>
+          <li>
+            <a
+              href="resume.pdf"
+              class="nav-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Resume</a>
+          </li>
+          <li><a href="#contact" class="nav-link scroll-to">Contact</a></li>
+        </ul>
+
+      </div>
+    </nav>
+
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" id="hero">
+      <div class="hero-container">
+
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">Wiktoria Sudak</h1>
+        <h2 class="hero-title">UX Developer</h2>
+        <p class="hero-bio">
+          I design and build digital experiences that sit at the intersection
+          of empathy and engineering. Currently focused on bringing
+          user-centred thinking to every stage of the product lifecycle.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#work" class="btn btn-primary scroll-to">View My Work</a>
+          <a
+            href="resume.pdf"
+            class="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Download Resume</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         WORK — CASE STUDIES
+    ============================================================ -->
+    <section class="work" id="work">
+      <div class="section-container">
+
+        <div class="section-header">
+          <h2 class="section-title">My Work</h2>
+          <p class="section-subtitle">
+            End-to-end case studies covering research, design, and development.
+          </p>
+        </div>
+
+        <div class="case-studies-grid">
+
+          <!-- Case Study Card 1: CV Sensei -->
+          <article class="case-study-card" data-index="01">
+            <a href="case-studies/cv-sensei.html" class="card-link">
+
+              <div class="card-image-wrapper">
+                <img
+                  src="assets/images/cv-sensei-cover.png"
+                  alt="CV Sensei project — AI-powered CV optimisation tool"
+                  class="card-image"
+                  loading="lazy"
+                />
+                <span class="card-tag">UX Design · Development</span>
+              </div>
+
+              <div class="card-content">
+                <h3 class="card-title">AI Powered CV Coach</h3>
+                <p class="card-description">
+                  A conversational AI agent that acts as a personal CV coach: helping job seekers articulate achievements in compelling language,
+                  optimize for ATS screening, prioritize content strategically,
+                  and generate polished templates—enabling them to stand out to recruiters and land interviews with confidence.
+                </p>
+                <div class="card-meta">
+                  <span class="card-year">2025</span>
+                  <span class="card-read-more">Read case study →</span>
+                </div>
+              </div>
+
+            </a>
+          </article>
+
+          <!-- Placeholder Card — Future Project -->
+          <article class="case-study-card case-study-card--coming-soon" data-index="02">
+            <div class="card-image-wrapper card-image-placeholder">
+              <span class="placeholder-label">Coming Soon</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Next Project</h3>
+              <p class="card-description">
+                Currently in progress. Check back soon.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         CONTACT
+    ============================================================ -->
+    <section class="contact" id="contact">
+      <div class="section-container">
+
+        <div class="section-header">
+          <h2 class="section-title">Let's Talk</h2>
+          <p class="section-subtitle">
+            Have a project in mind, or just want to connect? Drop me a message.
+          </p>
+        </div>
+
+        <form
+          class="contact-form"
+          id="contact-form"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form-input form-textarea"
+              placeholder="Tell me about your project..."
+              rows="6"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            Send Message
+          </button>
+
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+
+        </form>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         FOOTER
+    ============================================================ -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-copy">
+          &copy; <span id="footer-year"></span> Wiktoria Sudak. Designed &amp; built by me.
+        </p>
+        <ul class="footer-links">
+          <li>
+            <a
+              href="https://linkedin.com/in/yourhandle"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >LinkedIn</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/form.js"></script>
+
+  </body>
+</html>
