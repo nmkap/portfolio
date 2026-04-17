@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:ital,wght@0,300;1,300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Fraunces:ital,wght@0,300;1,300&family=Lora:wght@700&display=swap"
       rel="stylesheet"
     />
 
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="../css/animations.css" />
   </head>
 
-  <body>
+  <body class="case-study-page">
 
     <!-- ============================================================
          NAVBAR
@@ -53,410 +53,503 @@
     </nav>
 
 
-    <!-- ============================================================
-         HERO
-    ============================================================ -->
-    <header class="cs-hero-banner">
-      <div class="cs-hero">
-        <a href="../index.html#work" class="cs-nav-back">All Projects</a>
-        <p class="cs-hero-eyebrow">UX Design &amp; Development</p>
-        <h1 class="cs-hero-title">CV Sensei</h1>
-        <p class="cs-hero-tagline">
-          A conversational AI agent that acts as a personal CV coach: 
-          helping job seekers articulate achievements in compelling language,
-          optimize for ATS screening, prioritize content strategically,
-          and generate polished templates—enabling them to stand out to recruiters and land interviews with confidence.
-      </div>
-    </header><!-- /.cs-hero-banner -->
+    <!-- ══════════════════════════════════════
+         SECTION 1 — HERO BANNER
+    ══════════════════════════════════════ -->
+    <section class="dark">
+      <div class="page">
+        <a href="../index.html#work" class="back-link">← All Projects</a>
+        <span class="eyebrow">UX Design &amp; Development</span>
 
+        <h1>CV Sensei</h1>
 
-    <!-- ============================================================
-         METADATA BAR
-    ============================================================ -->
-    <div class="cs-meta">
-      <div class="cs-meta-inner">
-        <div class="cs-meta-item">
-          <span class="cs-meta-label">Role</span>
-          <span class="cs-meta-value">UX Designer &amp; Developer</span>
+        <h3>
+          A conversational AI agent that acts as a personal CV coach: helping job seekers articulate achievements in compelling language, optimise for ATS screening, prioritise content strategically, and generate polished templates—enabling them to stand out to recruiters and land interviews with confidence.
+        </h3>
+
+        <!-- TLDR BANNER -->
+        <div class="tldr-grid">
+          <div class="tldr-item">
+            <span class="tldr-key">Role</span>
+            <span class="tldr-val">UX Designer &amp; Developer</span>
+          </div>
+          <div class="tldr-item">
+            <span class="tldr-key">Timeline</span>
+            <span class="tldr-val">
+              Bootcamp Group AI Project — 1 Week<br>
+              Solo UX Project — 3 Weeks
+            </span>
+          </div>
+          <div class="tldr-item">
+            <span class="tldr-key">Methodology</span>
+            <span class="tldr-val">User interviews &amp; Usability testing</span>
+          </div>
         </div>
-        <div class="cs-meta-item">
-          <span class="cs-meta-label">Timeline</span>
-          <span class="cs-meta-value">2025</span>
-        </div>
-        <div class="cs-meta-item">
-          <span class="cs-meta-label">Phase 1</span>
-          <span class="cs-meta-value">Group Bootcamp Project</span>
-        </div>
-        <div class="cs-meta-item">
-          <span class="cs-meta-label">Phase 2</span>
-          <span class="cs-meta-value">Solo UX Research</span>
-        </div>
-        <div class="cs-meta-item">
-          <span class="cs-meta-label">Methods</span>
-          <span class="cs-meta-value">Qualitative Interviews · Persona Synthesis</span>
-        </div>
-      </div>
-    </div>
-
-
-    <hr class="cs-divider" />
-
-
-    <!-- ============================================================
-         SECTION 1: ORIGIN
-    ============================================================ -->
-    <section>
-      <div class="cs-section">
-
-        <p class="cs-section-eyebrow">Origin</p>
-        <h2 class="cs-section-title">A shared frustration, built into a product</h2>
-
-        <p class="cs-body">
-          CV Sensei started as a group project during a software development bootcamp.
-          All five of us shared the same frustration: <strong>updating and tailoring a CV felt
-          disproportionately time-consuming</strong> for something we had to do so often.
-          We validated this informally through conversations with fellow students and instructors,
-          identifying a clear shared pain point — and built a working AI-powered CV assistant
-          within a week.
-        </p>
-
-        <p class="cs-body">
-          The product worked, and the results were impressive. But as the bootcamp ended, one question stayed with me:
-        </p>
-
-        <div class="cs-callout">
-          <p>"What would make someone choose this over a free AI chatbot they already use?"</p>
-        </div>
-
       </div>
     </section>
 
 
-    <hr class="cs-divider" />
-
-
-    <!-- ============================================================
-         SECTION 2: PROJECT OVERVIEW
-    ============================================================ -->
+    <!-- ══════════════════════════════════════
+         SECTION 2 — ORIGIN
+    ══════════════════════════════════════ -->
     <section>
-      <div class="cs-section">
+      <div class="page">
+        <h2>Origin</h2>
 
-        <p class="cs-section-eyebrow">Project Overview</p>
+        <p>CV Sensei started as a group AI project during a software development bootcamp. All five of us shared the same frustration: updating and tailoring a CV felt disproportionately time-consuming for something we had to do so often. We validated the idea through conversations with other students and our bootcamp instructors, using our shared frustration to form the question: "What if AI could solve this issue?"</p>
+        <p>We built a working AI-powered CV assistant aimed at job seekers who apply to multiple roles within a week. But as the bootcamp ended, one question stayed with me:</p>
+        <blockquote class="origin-question">"What would make someone choose this over any other free AI chatbot they already use?"</blockquote>
+      </section>
 
-        <h2 class="cs-section-title">The Problem</h2>
-        <p class="cs-body">
-          Job seekers today face a fundamental tension between personalisation and efficiency.
-          Whether they're a researcher whose academic writing gets filtered out by ATS systems,
-          a seasoned professional drowning in 20 years of experience they don't know how to cut,
-          a high-volume applicant who can't afford to rewrite from scratch for every role,
-          or a design-conscious candidate who loses hours to formatting before writing a single word —
-          the common thread is the same: the process of turning real experience into a compelling, targeted CV is broken.
-        </p>
-        <p class="cs-body">
-          Existing tools force a choice. Generic templates offer speed but no intelligence.
-          AI writing tools offer suggestions but no structure. Professional CV writers offer quality but at a cost most job seekers can't justify.
-          And through it all, the applicant is left alone to navigate ATS requirements, industry tone, keyword strategy, and layout — simultaneously.
-        </p>
 
-        <h2 class="cs-section-title">The Goal</h2>
-        <p class="cs-body">
-          An AI-powered CV coach that transforms CVs through intelligent coaching. Users upload their experience, get intelligent suggestions to strengthen their language, optimise for ATS screening, and receive polished templates—all through a guided chat experience tailored to their target role.
-        </p>
+    <!-- ══════════════════════════════════════
+         SECTION 3 — PROJECT OVERVIEW
+    ══════════════════════════════════════ -->
+    <section class="mid">
+      <div class="page">
+        <h2>Project Overview</h2>
 
-        <video
-          autoplay
-          loop
-          muted
-          playsinline
-          class="cs-video"
-        >
-          <source src="../assets/videos/new-cv-snapshot.mp4" type="video/mp4">
+        <div class="overview-stack">
+          <div class="overview-card">
+            <h3>The Problem</h3>
+            <div class="overview-card__two-col">
+              <p>Job seekers face a fundamental tension between personalisation and efficiency. Whether they're a researcher whose academic writing gets filtered out by ATS systems, a seasoned professional drowning in 20 years of experience, or a high-volume applicant who can't rewrite from scratch for every role — the common thread is the same. The process of turning real experience into a compelling, targeted CV is broken.</p>
+              <p>Existing tools force a choice. Generic templates offer speed but no intelligence. AI writing tools offer suggestions but no structure. Professional CV writers offer quality but at a cost most can't justify. And through it all, the applicant is left to navigate the process completely alone.</p>
+            </div>
+          </div>
+          <div class="overview-card">
+            <h3>The Solution</h3>
+            <p>An AI-powered CV coach that transforms CVs through a guided chat experience, asking the right questions and keeping the full application process in mind. Users upload their experience, get intelligent suggestions to strengthen their language, optimise for ATS screening, and receive polished, role-targeted results — all in one flow.</p>
+          </div>
+        </div>
+
+        <span class="label">Video Snapshot — Key Product Feature</span>
+        <video id="keyFeatureVideo" loop muted playsinline preload="auto" style="width:100%; display:block;">
+          <source src="../assets/videos/key-product-feature.mp4" type="video/mp4">
         </video>
-
       </div>
     </section>
 
 
-    <hr class="cs-divider" />
-
-
-    <!-- ============================================================
-         SECTION 3: RESEARCH (was 2)
-    ============================================================ -->
+    <!-- ══════════════════════════════════════
+         SECTION 4 — UX RESEARCH
+    ══════════════════════════════════════ -->
     <section>
-      <div class="cs-section">
+      <div class="page">
+        <h2>UX Research</h2>
 
-        <p class="cs-section-eyebrow">Research</p>
-        <h2 class="cs-section-title">From gut feeling to grounded research</h2>
+        <p>The origin question that stuck with me post-bootcamp became the foundation for a more rigorous second phase, aimed at starting with the user, rather than the technicalities of the product itself. Having just completed my professional UX Design certification, I applied everything I learnt, using a structured design framework to make the product better — this time as a solo project.</p>
 
-        <p class="cs-body">
-          That question became the foundation for a more rigorous second phase. After completing
-          a professional UX Design certification, I returned to the problem with a structured
-          research approach — this time as a solo project.
-        </p>
+        <hr>
 
-        <p class="cs-body">
-          I conducted <strong>8 qualitative interviews</strong> across different industries and career
-          stages, using open-ended questions to surface honest attitudes around job hunting and CV writing.
-          The final question in particular was deliberate — grounding the speculative ("AI help") in
-          participants' actual mental models rather than assumed expectations.
-        </p>
-
-        <div class="cs-question-list">
-          <div class="cs-question-item">
-            <span class="cs-question-mark">"</span>
-            <span>Walk me through how you approach a job application.</span>
+        <h3>Research Methods</h3>
+        <div class="research-methods" style="grid-template-columns: repeat(2, 1fr);">
+          <div class="method-card">
+            <span class="method-stat">8</span>
+            <strong class="method-title">Qualitative Interviews</strong>
+            <p class="method-body">Across different industries and career stages, using open-ended questions to surface honest attitudes around the full job application process.</p>
           </div>
-          <div class="cs-question-item">
-            <span class="cs-question-mark">"</span>
-            <span>How do you feel when you have to update your CV?</span>
-          </div>
-          <div class="cs-question-item">
-            <span class="cs-question-mark">"</span>
-            <span>If AI were to help you with your CV, what would that ideally look like?</span>
+          <div class="method-card">
+            <span class="method-stat">5</span>
+            <strong class="method-title">Usability Studies</strong>
+            <p class="method-body">Using our original AI bootcamp project to identify edge cases, missed opportunities, and gain direct user feedback for evidence-based decisions.</p>
           </div>
         </div>
 
+        <h3>Research Questions</h3>
+        <p>To help answer my origin question — <em>"What would make someone choose this over any other free AI chatbot they already use?"</em> — the final question in particular was deliberate: designed to surface real expectations around AI help, rather than designing based on assumptions.</p>
+        <div class="research-questions">
+          <div class="rq-item">
+            <span class="rq-number">01</span>
+            <p class="rq-text">"Walk me through how you approach a job application."</p>
+          </div>
+          <div class="rq-item">
+            <span class="rq-number">02</span>
+            <p class="rq-text">"What do you feel when you have to update your CV?"</p>
+          </div>
+          <div class="rq-item">
+            <span class="rq-number">03</span>
+            <p class="rq-text">"If AI were to directly help you with your CV, what would that help ideally look like for you?"</p>
+          </div>
+        </div>
+
+        <h3>Key Findings</h3>
+        <p>Across all eight interviews, the same underlying conflicts surfaced repeatedly — regardless of industry, seniority, or prior experience with AI tools. The pain points participants described weren't isolated frustrations. They clustered into four deeper tensions that would go on to shape every design decision moving forward.</p>
+        <div class="findings-list">
+          <div class="finding-item">
+            <span class="finding-number">01</span>
+            <strong class="finding-title">Effort vs. Outcome</strong>
+            <p class="finding-body">Users waste significant time wrestling with formatting before a single word of content is written. The effort is front-loaded and invisible to the reader, yet it determines whether the CV even gets opened.</p>
+          </div>
+          <div class="finding-item">
+            <span class="finding-number">02</span>
+            <strong class="finding-title">Experience vs. Expression</strong>
+            <p class="finding-body">Users undersold themselves through passive language — listing responsibilities rather than achievements. They didn't want AI to write for them — they wanted it to coach them.</p>
+          </div>
+          <div class="finding-item">
+            <span class="finding-number">03</span>
+            <strong class="finding-title">Visibility vs. Authenticity</strong>
+            <p class="finding-body">Most participants knew ATS filtering existed but had little clarity on how to optimise for it. Adding all keywords felt inauthentic, and they had no way of knowing which ones actually mattered.</p>
+          </div>
+          <div class="finding-item">
+            <span class="finding-number">04</span>
+            <strong class="finding-title">Content vs. Structure</strong>
+            <p class="finding-body">Users had no clear framework for deciding what to include or in what order. Without guidance, they defaulted to everything, producing unfocused CVs they weren't confident in.</p>
+          </div>
+        </div>
+
+        <blockquote class="persona-quote">
+          "I apply to 30 jobs a week. Move one line in Word and the whole CV falls apart. I don't have time to reformat and rewrite for every role — just to get rejected by an algorithm before a human even sees my name."
+          <cite>— Luca Ferrante, the Frequent Applicant</cite>
+        </blockquote>
       </div>
     </section>
 
 
-    <hr class="cs-divider" />
+    <!-- ══════════════════════════════════════
+         SECTION 5 — DEFINING THE PROBLEM
+    ══════════════════════════════════════ -->
+    <section class="mid">
+      <div class="page">
+        <h2>Defining the Problem</h2>
+
+        <div class="problem-statement">
+          "Luca is a Sales Executive applying to over 30 jobs a week who needs a faster way to tailor his CV for each role and pass ATS screening, because rewriting from scratch every time simply isn't sustainable — and he keeps getting rejected before anyone reads his name."
+        </div>
+
+        <h3>User Personas</h3>
+        <div class="persona-carousel-wrapper" id="personaCarousel">
+          <div class="persona-carousel-track">
+            <div class="persona-card"><img src="../assets/images/cv-sensei/personas/Persona_1.png" alt="Persona 1" /></div>
+            <div class="persona-card"><img src="../assets/images/cv-sensei/personas/Persona_2.png" alt="Persona 2" /></div>
+            <div class="persona-card"><img src="../assets/images/cv-sensei/personas/Persona_3.png" alt="Persona 3" /></div>
+            <div class="persona-card"><img src="../assets/images/cv-sensei/personas/Persona_4.png" alt="Persona 4" /></div>
+          </div>
+          <div class="persona-scroll-hint">
+            <span>Scroll to see more</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 4l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <h3>How Might We…</h3>
+        <div class="hmw-list">
+          <div class="hmw-item">
+            <span class="hmw-number">HMW 1</span>
+            <strong class="hmw-title">Effort vs. Outcome</strong>
+            <p class="hmw-body">How might we reduce the time and cognitive load of CV editing without making the output feel generic or AI-generated?</p>
+          </div>
+          <div class="hmw-item">
+            <span class="hmw-number">HMW 2</span>
+            <strong class="hmw-title">Experience vs. Expression</strong>
+            <p class="hmw-body">How might we design an AI collaboration model where users feel like the author, not the passenger?</p>
+          </div>
+          <div class="hmw-item">
+            <span class="hmw-number">HMW 3</span>
+            <strong class="hmw-title">Visibility vs. Authenticity</strong>
+            <p class="hmw-body">How might we surface ATS keyword gaps in a way that feels actionable rather than overwhelming — and that preserves the user's authentic voice?</p>
+          </div>
+          <div class="hmw-item">
+            <span class="hmw-number">HMW 4</span>
+            <strong class="hmw-title">Content vs. Structure</strong>
+            <p class="hmw-body">How might we help users decide what to include and in what order — so their CV reflects what's most relevant, not just what's most recent?</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-    <!-- ============================================================
-         SECTION 3: KEY FINDINGS
-    ============================================================ -->
+    <!-- ══════════════════════════════════════
+         SECTION 6 — DESIGNING THE SOLUTION
+    ══════════════════════════════════════ -->
     <section>
-      <div class="cs-section">
+      <div class="page">
+        <h2>Designing the Solution</h2>
 
-        <p class="cs-section-eyebrow">Key Findings</p>
-        <h2 class="cs-section-title">Four pain points, three core tensions</h2>
-        <p class="cs-body">
-          Across all eight interviews, the same underlying conflicts surfaced repeatedly —
-          regardless of industry, seniority, or prior experience with AI tools.
-          The four pain points participants described weren't isolated frustrations.
-          They clustered into three deeper tensions that would go on to shape every design decision moving forward.
-        </p>
+        <h3>User Flows</h3>
+        <p>A key design decision was introducing a <strong>guest flow</strong> — letting users create a CV through the chat interface before committing to an account. Account creation is only triggered when they request to download their finished CV, lowering the barrier to entry and building trust before asking for personal details.</p>
+        <p>On sign-up, the CV downloads automatically and the user lands on their dashboard, where they can continue refining their existing CV or start a new one tailored to a different role.</p>
+        <span class="label">User Flow Diagram</span>
+        <img src="../assets/images/cv-sensei/design/user-flows.png" alt="User flow diagram showing guest and authenticated paths through CV Sensei" style="width:100%; margin-bottom:12px;" />
+        <p style="font-family:sans-serif; font-size:13px; color:#888; font-style:italic; margin-bottom:48px;">Auth is deferred to the download step — users experience full value before committing to an account.</p>
 
-        <div class="cs-tensions">
+        <h3>UX Architecture</h3>
+        <p>Once the user flows were mapped, I translated them into a full site hierarchy — creating a sitemap that gave me a bird's-eye view of the product structure and further exposed what the bootcamp version was missing. Mapping task flows in parallel helped surface the disconnect between our original structure and the mental models users described in research, leading to several structural changes before a single wireframe was drawn.</p>
+        <div class="wireframe-grid">
+          <div>
+            <span class="label">Sitemap</span>
+            <img src="../assets/images/cv-sensei/design/sitemap.png" alt="CV Sensei sitemap showing full site hierarchy" style="width:100%;" />
+          </div>
+          <div>
+            <span class="label">Task Flows</span>
+            <img src="../assets/images/cv-sensei/design/task-flows.png" alt="CV Sensei task flows diagram" style="width:100%;" />
+          </div>
+        </div>
 
-          <div class="cs-tension-card">
-            <span class="cs-tension-number">01</span>
-            <h3 class="cs-tension-title">Effort vs. Outcome</h3>
-            <p class="cs-tension-body">
-              Users described CV writing as high-effort with unpredictable returns. 
-              Formatting alone — margins, spacing, template wrestling — 
-              consumed significant time before a single word of content was written. 
-              And when it came to deciding what to include and in what order, most participants had no clear framework, 
-              leaving them with unfocused CVs they weren't confident in.
+        <h3>Wireframes</h3>
+        <p>What started as a simple AI agent grew into a full web app — one with a dedicated landing page that communicates value before asking users to commit to anything.</p>
+        <p>Key structural changes from bootcamp to solo project: a <strong>guest flow</strong> so users can explore the product without creating an account; a <strong>document view</strong> so users can preview their updated CV live and control every change before it's applied; and a <strong>homepage</strong> as a new entry point to communicate the product's value proposition upfront.</p>
+        <div class="wireframe-grid">
+          <div>
+            <span class="label">Before — Bootcamp Wireframes</span>
+            <img src="../assets/images/cv-sensei/design/wireframes-before.png" alt="Bootcamp wireframes — before" style="width:100%;" />
+          </div>
+          <div>
+            <span class="label">After — Solo Project Wireframes</span>
+            <img src="../assets/images/cv-sensei/design/wireframes.png" alt="Solo project wireframes — after" style="width:100%;" />
+          </div>
+        </div>
+
+        <h3 style="margin-top:48px;">Mockups</h3>
+
+        <!-- HMW 1 -->
+        <p style="font-family:sans-serif; font-size:13px; color:#888; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">HMW 1: Effort vs. Outcome</p>
+        <p><em>How might we reduce the time and cognitive load of CV editing without making the output feel generic or AI-generated?</em></p>
+        <div class="mockup-row">
+          <div class="mockup-screen">
+            <span class="label">Mockup — Three-panel chat view</span>
+            <img src="../assets/images/cv-sensei/design/HMW1-Mockup.png" alt="HMW 1 Mockup — Three-panel chat view" style="width:100%;" />
+          </div>
+          <div class="mockup-text">
+            <p>Users begin by uploading an existing CV or adding their experience manually. Regardless of input method, the output is automatically formatted and displayed alongside the chat in real time. All formatting and structural changes are handled conversationally through the AI coach — removing the cognitive load of editing a document manually each time.</p>
+          </div>
+        </div>
+
+        <!-- HMW 2 -->
+        <p style="font-family:sans-serif; font-size:13px; color:#888; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">HMW 2: Experience vs. Expression</p>
+        <p><em>How might we design an AI collaboration model where users feel like the author, not the passenger?</em></p>
+        <div class="mockup-row mockup-row--reverse">
+          <div class="mockup-screen">
+            <span class="label">Mockup — Changes panel view</span>
+            <img src="../assets/images/cv-sensei/design/HMW2-Mockup.png" alt="HMW 2 Mockup — Changes panel view" style="width:100%;" />
+          </div>
+          <div class="mockup-text">
+            <p>The Changes view gives users full editorial control — reviewing each AI suggestion individually and choosing to accept, reject, or edit it before it's applied. A Document/Changes toggle lets users switch seamlessly between reviewing suggestions and seeing their CV take shape. Layout, style, and content order can all be adjusted directly through the chat.</p>
+          </div>
+        </div>
+
+        <!-- HMW 3 -->
+        <p style="font-family:sans-serif; font-size:13px; color:#888; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">HMW 3: Visibility vs. Authenticity</p>
+        <p><em>How might we surface ATS keyword gaps in a way that feels actionable rather than overwhelming — and that preserves the user's authentic voice?</em></p>
+        <div class="mockup-row">
+          <div class="mockup-screen">
+            <span class="label">Mockup — ATS score &amp; keyword badges</span>
+            <img src="../assets/images/cv-sensei/design/HMW3-Mockup.png" alt="HMW 3 Mockup — ATS score and keyword badges" style="width:100%;" />
+          </div>
+          <div class="mockup-text">
+            <p>The ATS score is visible throughout the entire session, giving users a clear measure of progress without interrupting the flow of the conversation. Suggested keywords are surfaced directly on the CV preview with "new keyword" badges — showing exactly what was added and where. Users retain full control, and can edit any suggestion before approving it.</p>
+          </div>
+        </div>
+
+        <!-- HMW 4 -->
+        <p style="font-family:sans-serif; font-size:13px; color:#888; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">HMW 4: Content vs. Structure</p>
+        <p><em>How might we help users decide what to include and in what order — so their CV reflects what's most relevant, not just what's most recent?</em></p>
+        <div class="mockup-row mockup-row--reverse">
+          <div class="mockup-screen">
+            <span class="label">Mockup — Expanded CV document view</span>
+            <img src="../assets/images/cv-sensei/design/HMW4-Mockup.png" alt="HMW 4 Mockup — Expanded CV document view" style="width:100%;" />
+          </div>
+          <div class="mockup-text">
+            <p>The AI coach opens by analysing the user's existing CV against their target role and job description. From there, users receive tailored content suggestions through the chat — guided on what to emphasise, what to trim, and what to remove entirely. The result is a CV shaped around relevance, not just chronology.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         SECTION 7 — REFINING THE DESIGN
+    ══════════════════════════════════════ -->
+    <section class="mid">
+      <div class="page">
+        <h2>Refining the Design</h2>
+
+        <h3>User Testing</h3>
+        <p>Five participants took part in unmoderated usability testing of the original bootcamp product. The sessions surfaced recurring friction points across three core screens — each addressed individually below.</p>
+
+        <h3 style="margin-top:36px;">Before &amp; After — Design Iteration 01</h3>
+
+        <!-- Screen 1: New CV Page -->
+        <p style="font-family:sans-serif; font-size:13px; color:#888; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:16px;">Screen 1: New CV Page</p>
+        <div class="iteration-row">
+          <div>
+            <span class="label">Before</span>
+            <img src="../assets/images/cv-sensei/design/screen1-before.png" alt="Screen 1 Before — New CV Page original design" style="width:100%;" />
+          </div>
+          <div class="arrow-box">→</div>
+          <div>
+            <span class="label">After</span>
+            <img src="../assets/images/cv-sensei/design/screen1-after.png" alt="Screen 1 After — New CV Page redesign" style="width:100%;" />
+          </div>
+        </div>
+        <p>Users found the original "New CV" page restrictive — manually copying and pasting CV content for each CV chat created unnecessary friction. The redesign introduced a drag-and-drop upload, letting users drop in an existing CV in seconds. Target role and job description inputs were consolidated onto the same screen, so both are analysed simultaneously before the coaching session begins. (See iteration 02 for further improvements.)</p>
+
+        <!-- Screen 2: CV Chat Page -->
+        <p style="font-family:sans-serif; font-size:13px; color:#888; text-transform:uppercase; letter-spacing:0.08em; margin: 36px 0 16px;">Screen 2: CV Chat Page</p>
+        <div class="iteration-row">
+          <div>
+            <span class="label">Before</span>
+            <img src="../assets/images/cv-sensei/design/screen2-before.png" alt="Screen 2 Before — CV Chat Page original design" style="width:100%;" />
+          </div>
+          <div class="arrow-box">→</div>
+          <div>
+            <span class="label">After</span>
+            <img src="../assets/images/cv-sensei/design/screen2-after.png" alt="Screen 2 After — CV Chat Page redesign" style="width:100%;" />
+          </div>
+        </div>
+        <p>Users described the original chat interface as "crowded" and "visually overstimulating." The raw CV text box was flagged as both irrelevant and frustrating — users had to manually copy AI suggestions and paste them back into the document themselves. The redesign replaced this with a clean two-panel layout: chat on one side, a fully formatted live CV preview on the other. AI suggestions are applied to the CV with a single "accept" click — eliminating the manual copy-paste loop entirely.</p>
+
+        <!-- Screen 3: CV Dashboard -->
+        <p style="font-family:sans-serif; font-size:13px; color:#888; text-transform:uppercase; letter-spacing:0.08em; margin: 36px 0 16px;">Screen 3: CV Dashboard</p>
+        <div class="iteration-row">
+          <div>
+            <span class="label">Before</span>
+            <img src="../assets/images/cv-sensei/design/screen3-before.png" alt="Screen 3 Before — CV Dashboard original design" style="width:100%;" />
+          </div>
+          <div class="arrow-box">→</div>
+          <div>
+            <span class="label">After</span>
+            <img src="../assets/images/cv-sensei/design/screen3-after.png" alt="Screen 3 After — CV Dashboard redesign" style="width:100%;" />
+          </div>
+        </div>
+        <p>Users reported uncertainty about whether each dashboard card represented a CV coaching session or a finished document. The redesign resolved this by adding contextual metadata to each card — message count, last edited date, ATS score, and a "Continue" button — making it immediately clear that each card is an active coaching session, not a static file. The ambiguous "Add a new CV" button was replaced with a "New CV" card carrying the instruction "drag and drop an existing CV, or start from scratch" — removing any guesswork about what the action does.</p>
+
+        <h3 style="margin-top:48px;">Before &amp; After — Design Iteration 02</h3>
+        <p>The second round of usability testing validated the core redesign decisions. Participants responded positively to the two-panel layout, describing the live CV preview as "intuitive and helpful" — both as a real-time change tracker and as a document preview. Testing also surfaced three targeted improvements to the onboarding flow on the "New CV" page.</p>
+
+        <div class="wireframe-grid">
+          <div>
+            <span class="label">Step 1 — CV Upload</span>
+            <img src="../assets/images/cv-sensei/design/NewCV-step1.png" alt="New CV Step 1 — CV Upload" style="width:100%;" />
+          </div>
+          <div>
+            <span class="label">Step 2 — Target Role (unlocked)</span>
+            <img src="../assets/images/cv-sensei/design/NewCV-step2.png" alt="New CV Step 2 — Target Role" style="width:100%;" />
+          </div>
+        </div>
+
+        <div class="hmw-list" style="margin-top:24px;">
+          <div class="hmw-item"><strong>1. Saved profile detection</strong> — Returning users are now recognised on entry, with a prompt to pre-fill their experience using previously saved information, reducing repetitive data entry across sessions.</div>
+          <div class="hmw-item"><strong>2. Sequential step gating</strong> — The Target Role panel is blurred and locked behind a "Complete Step 1 to continue" modal, enforcing linear onboarding and preventing users from skipping ahead before their CV is uploaded.</div>
+          <div class="hmw-item"><strong>3. Progressive disclosure via step completion</strong> — Once a CV is successfully uploaded, Step 1 is marked complete and Step 2 unlocks. The active state change provides clear system feedback, confirming the upload was successful before the coaching session begins.</div>
+        </div>
+
+        <hr>
+
+        <h3>Accessibility Considerations</h3>
+        <div class="a11y-card" style="border-top: 1px solid #ddd; padding: 24px 0;">
+          <div class="mockup-row" style="margin: 0;">
+            <div class="mockup-text">
+              <h3>WCAG Colour Contrast</h3>
+              <p style="max-width:none;">A full colour audit against WCAG AA standards identified three issues in the original palette — redundant accent shades, near-identical light surfaces, and a missing mid-tone creating an abrupt tonal jump. The palette was consolidated and each colour assigned a defined role, ensuring full AA compliance across all contexts.</p>
+            </div>
+            <div>
+              <span class="label">WCAG Colour Contrast Diagram</span>
+              <img src="../assets/images/cv-sensei/design/WCAG-diagram.png" alt="WCAG colour contrast diagram showing palette audit and AA compliance" style="width:100%;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         SECTION 8 — FINAL DESIGN
+    ══════════════════════════════════════ -->
+    <section class="dark">
+      <div class="page">
+        <h2>Final Design</h2>
+
+        <span class="label" style="color:#888;">Product Video — Main User Flow</span>
+        <div class="placeholder" style="height:460px; width:100%; margin-bottom:48px;">
+          [ Full Product Video Placeholder — Main User Flow ]
+        </div>
+
+        <h3>Final Screens</h3>
+        <div class="final-screens">
+          <div>
+            <span class="label" style="color:#888;">Screen 01</span>
+            <div class="placeholder" style="height:260px;">[ Final Screen ]</div>
+          </div>
+          <div>
+            <span class="label" style="color:#888;">Screen 02</span>
+            <div class="placeholder" style="height:260px;">[ Final Screen ]</div>
+          </div>
+          <div>
+            <span class="label" style="color:#888;">Screen 03</span>
+            <div class="placeholder" style="height:260px;">[ Final Screen ]</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         SECTION 9 — REFLECTION
+    ══════════════════════════════════════ -->
+    <section>
+      <div class="page">
+        <h2>Reflection</h2>
+
+        <div class="reflection-grid">
+          <div class="reflection-card">
+            <h3>What I Learned</h3>
+            <p style="max-width:none;">Working on this project solo taught me that following the design framework from start to finish — 
+              rather than jumping straight to solutions built on assumptions — is what separates a functioning product from one that 
+              genuinely matters to people. Every stage I was tempted to skip (writing research questions before interviews, 
+              defining HMW questions before wireframing) turned out to be the stage that most directly shaped a better design decision downstream.
             </p>
-          </div>
-
-          <div class="cs-tension-card">
-            <span class="cs-tension-number">02</span>
-            <h3 class="cs-tension-title">Keyword Anxiety</h3>
-            <p class="cs-tension-body">
-              Most participants were aware that ATS filtering existed, but had little clarity on how to optimise for it. 
-              They knew missing keywords could mean rejection before any human saw their CV — but adding them felt inauthentic, 
-              and they didn't know which ones actually mattered for a given role.
+            <p style="max-width:none;">
+              I also learned that AI-powered products introduce a specific UX challenge that general design principles 
+              don't fully prepare you for: users need to feel like collaborators, not passengers. 
+              Getting that balance right — giving the AI enough authority to be useful while keeping the user in control 
+              of every output — was the central design problem of this project, and it shaped decisions across every screen.
             </p>
-          </div>
-
-          <div class="cs-tension-card">
-            <span class="cs-tension-number">03</span>
-            <h3 class="cs-tension-title">Loss of Control</h3>
-            <p class="cs-tension-body">
-              Participants consistently undersold themselves through passive language — describing responsibilities rather than achievements. 
-              When asked about AI help, they didn't want it to write for them; they wanted it to coach them. 
-              The fear wasn't bad CVs — it was CVs that no longer sounded like them.
+            <p style="max-width:none;">
+              On a craft level, this was my first time working through a full design system, 
+              performing a comprehensive colour audit against WCAG AA standards, building responsive 
+              & high fidelity mockups and approaching iteration as a deliberate phase rather than a reaction 
+              to something going wrong. Those habits are now part of how I work.</p>
             </p>
-          </div>
 
-        </div>
-
-      </div>
-
-      <div class="cs-section">
-        <div class="cs-callout">
-          <p>"I apply to 30 jobs a week. Move one line in Word and the whole CV falls apart. I don't have time to reformat and rewrite for every role — just to get rejected by an algorithm before a human even sees my name."</p>
-        </div>
-      </div>
-      
-    </section>
-
-
-
-    <hr class="cs-divider" />
-
-
-    <!-- ============================================================
-         SECTION 4: DEFINING THE PROBLEM
-    ============================================================ -->
-    <section>
-      <div class="cs-section">
-
-        <p class="cs-section-eyebrow">Defining the Problem</p>
-        <h2 class="cs-section-title">User Personas</h2>
-        <p class="cs-body">
-          I synthesised findings by identifying behavioural patterns and grouping them into
-          <strong>four distinct user personas</strong> — each representing a different relationship
-          with the CV writing process.
-        </p>
-
-        <div class="cs-persona-carousel" aria-label="User personas carousel">
-          <div class="cs-persona-track">
-
-            <div class="cs-persona-card">
-              <img src="../assets/images/cv-sensei/personas/Persona_1.png" alt="Persona 1 — The Anxious Applicant" class="cs-persona-img" />
-              <span class="cs-persona-label">Persona 1</span>
-              <h3 class="cs-persona-name">The Anxious Applicant</h3>
-              <p class="cs-persona-desc">
-                Placeholder — add persona description, goals, frustrations, and key behaviours here.
-              </p>
-            </div>
-
-            <div class="cs-persona-card">
-              <img src="../assets/images/cv-sensei/personas/Persona_2.png" alt="Persona 2 — The Career Switcher" class="cs-persona-img" />
-              <span class="cs-persona-label">Persona 2</span>
-              <h3 class="cs-persona-name">The Career Switcher</h3>
-              <p class="cs-persona-desc">
-                Placeholder — add persona description, goals, frustrations, and key behaviours here.
-              </p>
-            </div>
-
-            <div class="cs-persona-card">
-              <img src="../assets/images/cv-sensei/personas/Persona_3.png" alt="Persona 3 — The Passive Optimiser" class="cs-persona-img" />
-              <span class="cs-persona-label">Persona 3</span>
-              <h3 class="cs-persona-name">The Passive Optimiser</h3>
-              <p class="cs-persona-desc">
-                Placeholder — add persona description, goals, frustrations, and key behaviours here.
-              </p>
-            </div>
-
-            <div class="cs-persona-card">
-              <img src="../assets/images/cv-sensei/personas/Persona_4.png" alt="Persona 4 — The Confident Veteran" class="cs-persona-img" />
-              <span class="cs-persona-label">Persona 4</span>
-              <h3 class="cs-persona-name">The Confident Veteran</h3>
-              <p class="cs-persona-desc">
-                Placeholder — add persona description, goals, frustrations, and key behaviours here.
-              </p>
-            </div>
 
           </div>
-
-          <div class="cs-persona-nav">
-            <button class="cs-persona-btn cs-persona-btn--prev" aria-label="Previous persona">&#8592;</button>
-            <div class="cs-persona-dots">
-              <button class="cs-persona-dot active" aria-label="Go to persona 1"></button>
-              <button class="cs-persona-dot" aria-label="Go to persona 2"></button>
-              <button class="cs-persona-dot" aria-label="Go to persona 3"></button>
-              <button class="cs-persona-dot" aria-label="Go to persona 4"></button>
-            </div>
-            <button class="cs-persona-btn cs-persona-btn--next" aria-label="Next persona">&#8594;</button>
+          <div class="reflection-card">
+            <h3>What I'd Do Differently</h3>
+            <p style="max-width:none;">As my first end-to-end solo project, this section could easily be its own case study. I'll keep it to the two that would most change how I'd approach the next one.</p>
+            <p style="max-width:none;">In hindsight, I'd establish the design system as a complete, component-based foundation before building any screens. I moved into mockups while the system was still partially defined, which meant revisiting decisions mid-build — spacing tokens, component states, interactive variants — that should have been resolved upfront. It slowed the process down in ways that a more disciplined setup phase would have prevented.</p>
+            <p style="max-width:none;">I also approached this project as an improvement to an existing product — which shaped every decision, including what questions I asked in research. With more distance, I'd take a step back earlier and ask whether the same user problems might be better solved through an entirely different interaction model. That's a harder question to hold open once you're already building, which is why it needs to happen at the research stage — before assumptions calcify into decisions.</p>
           </div>
         </div>
 
-        <h2 class="cs-section-title">From research to a design focus</h2>
-
-        <p class="cs-body">
-          With four personas mapped and three recurring tensions identified, the next step was grounding the design challenge in a specific user reality — before opening it back up into opportunity space.
-        </p>
-
-        <div class="cs-problem-statement">
-          <p class="cs-problem-label">Problem Statement</p>
-          <blockquote class="cs-problem-quote">
-            Luca is a Sales Executive applying to over 30 jobs a week who needs a faster way to tailor his CV for each role and pass ATS screening, because rewriting from scratch every time simply isn't sustainable — and he keeps getting rejected before anyone reads his name.
-          </blockquote>
+        <h3>Next Steps</h3>
+        <div class="hmw-list">
+          <div class="hmw-item">
+            <strong>01 — Build to production using AI-assisted development tools</strong>
+            <p>Translate the final Figma designs into a working application using Builder.io and Claude MCP — moving the product from a design artefact into a real, testable product in users' hands.</p>
+          </div>
+          <div class="hmw-item">
+            <strong>02 — Conduct a third round of usability testing at production level</strong>
+            <p>With a live application, run a further round of testing focused on areas unique to production: AI model behaviour and output quality, response channelling across different CV types, and account security flows — validating that the experience holds up beyond the design environment.</p>
+          </div>
         </div>
-
-        <h2 class="cs-section-title">Three tensions, three design questions</h2>
-
-        <p class="cs-body">
-          Each HMW question maps directly to one of the three core tensions surfaced in research — reframing a user pain point as a design opportunity.
-        </p>
-
-        <div class="cs-hmw-list">
-
-          <div class="cs-hmw-item">
-            <div class="cs-hmw-header">
-              <span class="cs-hmw-number">HMW 01</span>
-              <span class="cs-hmw-cluster">Effort vs. Outcome</span>
-            </div>
-            <p class="cs-hmw-question">How might we reduce the time and cognitive load of CV editing without making the output feel generic or AI-generated?</p>
-          </div>
-
-          <div class="cs-hmw-item">
-            <div class="cs-hmw-header">
-              <span class="cs-hmw-number">HMW 02</span>
-              <span class="cs-hmw-cluster">Keyword Anxiety</span>
-            </div>
-            <p class="cs-hmw-question">How might we surface ATS keyword gaps in a way that feels actionable rather than overwhelming — and that preserves the user's authentic voice?</p>
-          </div>
-
-          <div class="cs-hmw-item">
-            <div class="cs-hmw-header">
-              <span class="cs-hmw-number">HMW 03</span>
-              <span class="cs-hmw-cluster">Loss of Control</span>
-            </div>
-            <p class="cs-hmw-question">How might we design an AI collaboration model where users feel like the author, not the passenger?</p>
-          </div>
-
-        </div>
-
       </div>
     </section>
 
 
-    <hr class="cs-divider" />
-
-
-    <!-- ============================================================
-         SECTIONS TO COME — Placeholders
-    ============================================================ -->
-    <section>
-      <div class="cs-section">
-
-        <p class="cs-section-eyebrow">Coming Up</p>
-        <h2 class="cs-section-title">More to follow</h2>
-        <p class="cs-body">
-          The remaining sections of this case study are in progress. Add your content for:
-          problem framing, design decisions, prototypes, testing, and outcomes below.
-        </p>
-
-        <div class="cs-placeholder-stack">
-          <div class="cs-placeholder">
-            <p class="cs-placeholder-label">Problem Definition</p>
-            <p class="cs-placeholder-text">HMW statements, design principles, prioritisation</p>
-          </div>
-          <div class="cs-placeholder">
-            <p class="cs-placeholder-label">Design &amp; Ideation</p>
-            <p class="cs-placeholder-text">User flows, sketches, wireframes</p>
-          </div>
-          <div class="cs-placeholder">
-            <p class="cs-placeholder-label">Prototyping &amp; Testing</p>
-            <p class="cs-placeholder-text">Usability testing rounds, iterations</p>
-          </div>
-          <div class="cs-placeholder">
-            <p class="cs-placeholder-label">Outcomes &amp; Reflections</p>
-            <p class="cs-placeholder-text">Key learnings, what I'd do differently, next steps</p>
-          </div>
+    <!-- ══════════════════════════════════════
+         NEXT PROJECT CTA
+    ══════════════════════════════════════ -->
+    <section class="dark" style="text-align:center;">
+      <div class="page">
+        <p style="color:#888; font-family:sans-serif; font-size:13px; margin: 0 auto 16px;">Next Project</p>
+        <h2>[ Next Project Title ]</h2>
+        <div style="margin-top:24px;">
+          <a href="../index.html#work" class="btn btn-primary">View All Projects</a>
         </div>
-
       </div>
     </section>
-
-
-    <hr class="cs-divider" />
-
-
-    <!-- ============================================================
-         FOOTER CTA
-    ============================================================ -->
-    <div class="cs-nav-cta">
-      <p>Interested in working together?</p>
-      <a href="../index.html#contact" class="btn btn-primary">Get in touch</a>
-    </div>
 
 
     <!-- ============================================================
@@ -496,39 +589,69 @@
     </script>
     <script>
       (function () {
-        const carousel = document.querySelector('.cs-persona-carousel');
-        if (!carousel) return;
+        const carousel = document.getElementById('personaCarousel');
+        const track = carousel.querySelector('.persona-carousel-track');
+        const hint = carousel.querySelector('.persona-scroll-hint');
+        let isDragging = false;
+        let startX, startScrollLeft;
 
-        const track = carousel.querySelector('.cs-persona-track');
-        const cards = Array.from(track.querySelectorAll('.cs-persona-card'));
-        const dots = Array.from(carousel.querySelectorAll('.cs-persona-dot'));
-        const prevBtn = carousel.querySelector('.cs-persona-btn--prev');
-        const nextBtn = carousel.querySelector('.cs-persona-btn--next');
+        carousel.addEventListener('mouseenter', () => {
+          hint.classList.add('persona-scroll-hint--visible');
+        });
 
-        function visibleCount() {
-          return window.innerWidth <= 640 ? 1 : 2;
+        carousel.addEventListener('mouseleave', () => {
+          hint.classList.remove('persona-scroll-hint--visible');
+          isDragging = false;
+          track.style.cursor = '';
+        });
+
+        track.addEventListener('mousedown', (e) => {
+          isDragging = true;
+          startX = e.clientX;
+          startScrollLeft = track.scrollLeft;
+          track.style.cursor = 'grabbing';
+        });
+
+        window.addEventListener('mouseup', () => {
+          isDragging = false;
+          track.style.cursor = '';
+        });
+
+        track.addEventListener('mousemove', (e) => {
+          if (!isDragging) return;
+          e.preventDefault();
+          track.scrollLeft = startScrollLeft - (e.clientX - startX);
+        });
+
+        // Hide hint once user has scrolled
+        track.addEventListener('scroll', () => {
+          if (track.scrollLeft > 40) hint.style.opacity = '0';
+          else hint.style.opacity = '';
+        }, { passive: true });
+      })();
+    </script>
+    <script>
+      (function () {
+        const vid = document.getElementById('keyFeatureVideo');
+
+        function inView() {
+          const r = vid.getBoundingClientRect();
+          return r.top < window.innerHeight && r.bottom > 0;
         }
 
-        const total = cards.length;
-        let current = 0;
+        // Scroll handler is a synchronous user gesture — Safari allows play() here
+        document.addEventListener('scroll', function () {
+          if (inView()) { if (vid.paused) vid.play().catch(() => {}); }
+          else           { vid.pause(); }
+        }, { passive: true });
 
-        function maxIndex() {
-          return total - visibleCount();
+        // Chrome / Firefox: IntersectionObserver doesn't need a gesture
+        if ('IntersectionObserver' in window) {
+          new IntersectionObserver(function (entries) {
+            if (entries[0].isIntersecting) vid.play().catch(() => {});
+            else vid.pause();
+          }, { threshold: 0.1 }).observe(vid);
         }
-
-        function goTo(index) {
-          current = Math.max(0, Math.min(index, maxIndex()));
-          const cardWidth = cards[0].getBoundingClientRect().width;
-          const gap = parseFloat(getComputedStyle(track).gap) || 0;
-          track.style.transform = `translateX(-${current * (cardWidth + gap)}px)`;
-          dots.forEach((d, i) => d.classList.toggle('active', i === current));
-        }
-
-        prevBtn.addEventListener('click', () => goTo(current - 1));
-        nextBtn.addEventListener('click', () => goTo(current + 1));
-        dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
-
-        window.addEventListener('resize', () => goTo(current));
       })();
     </script>
 

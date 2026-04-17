@@ -9,6 +9,7 @@
    ------------------------------------------------------------ */
 :root {
   /* Colours — light, editorial palette (Mike Wilson inspired) */
+  --color-bg-dark:     #1c1b18;
   --color-bg:          #fafaf8;
   --color-bg-soft:     #f2f1ec;
   --color-bg-card:     #ffffff;
@@ -16,12 +17,13 @@
   --color-text-primary:   #1c1b18;
   --color-text-secondary: #72706a;
   --color-text-muted:     #b0aea6;
-  --color-accent:      #7a6248;
-  --color-accent-hover:#5f4c37;
+  --color-accent:      #b7410e;
+  --color-accent-hover: #8e270e;
 
   /* Typography */
-  --font-sans:   'Inter', system-ui, sans-serif;
-  --font-serif:  'Fraunces', Georgia, serif;
+  --font-sans:        'Figtree', system-ui, sans-serif;
+  --font-serif:       'Fraunces', Georgia, serif;
+  --font-serif-bold:  'Lora', Georgia, serif;
 
   /* Spacing scale */
   --space-xs:  0.5rem;
@@ -55,7 +57,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--nav-height);
-  font-size: 16px;
+  font-size: 18px;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -95,14 +97,15 @@ button {
    Typography
    ------------------------------------------------------------ */
 h1, h2, h3, h4 {
+  font-family: var(--font-serif-bold);
   line-height: 1.15;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .section-title {
-  font-family: var(--font-serif);
+  font-family: var(--font-serif-bold);
   font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 300;
+  font-weight: 700;
   color: var(--color-text-primary);
   margin-bottom: var(--space-xs);
 }
