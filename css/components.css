@@ -146,12 +146,12 @@
   margin-bottom: var(--space-md);
 }
 
-.hero-rule {
+/* .hero-rule {
   width: 40px;
   border: none;
   border-top: 1px solid rgba(183, 65, 14, 0.45);
   margin-bottom: 48px;
-}
+} */
 
 .hero-cta {
   display: flex;
@@ -228,7 +228,7 @@
    WORK — CASE STUDY CARDS
    ------------------------------------------------------------ */
 .work {
-  background-color: var(--color-bg-light);
+  background-color: var(--color-bg-card);
 }
 
 .case-studies-grid {
@@ -270,7 +270,7 @@
 .card-image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.4s ease;
 }
 
