@@ -1,33 +1,38 @@
-/* ============================================================
-   STYLE.CSS — Global styles, CSS variables, reset, typography
-   ============================================================ */
-
-
 /* ------------------------------------------------------------
-   CSS Custom Properties (your design tokens)
-   Change these to rebrand the entire site instantly
+   Branding & Design Tokens
    ------------------------------------------------------------ */
 :root {
-  /* Colours — light, editorial palette (Mike Wilson inspired) */
-  --color-bg-dark:     #1c1b18;
-  --color-bg:          #fafaf8;
-  --color-bg-soft:     #f2f1ec;
-  --color-bg-card:     #ffffff;
-  --color-border:      rgba(0, 0, 0, 0.09);
-  --color-text-primary:   #1c1b18;
-  --color-text-secondary: #72706a;
-  --color-text-muted:     #b0aea6;
-  --color-accent:      #b7410e;
-  --color-accent-hover: #8e270e;
+ /* Backgrounds */
+  --color-bg-dark:     #1C1B18;
+  --color-bg-light:    #FFFBF1;
+  --color-bg-card:     #FFFFFF;
+  --color-bg-brown:    #562114;
+
+/* Text — light surfaces */
+  --color-text-primary:   #1C1B18;
+  --color-text-accent:    #B7410E;
+  --color-text-muted:     #BCBAAE;
+
+  /* Text — dark surfaces */
+  --color-text-on-dark-primary:   #F0E1D1;
+  --color-text-on-dark-secondary: #BCBAAE;
+  --color-text-on-dark-accent: #B7410E;
+
+  /* Buttons */
+  --color-accent:       #B7410E;
+  --color-secondary:    #F0E1D1;
+  --color-accent-hover: #8E270E;
+
+  /* Borders */
+  --color-border:      #1C1B18;
 
   /* Typography */
-  --font-sans:        'Figtree', system-ui, sans-serif;
-  --font-serif:       'Fraunces', Georgia, serif;
-  --font-serif-bold:  'Lora', Georgia, serif;
+  --font-sans:   'Figtree', system-ui, sans-serif;
+  --font-serif:  'Lora', Georgia, serif;
 
   /* Spacing scale */
   --space-xs:  0.5rem;
-  --space-sm:  1rem;
+  --space-sm:  1rem;  
   --space-md:  2rem;
   --space-lg:  4rem;
   --space-xl:  8rem;
@@ -63,7 +68,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-light);
   color: var(--color-text-primary);
   line-height: 1.7;
   min-height: 100vh;
@@ -97,13 +102,13 @@ button {
    Typography
    ------------------------------------------------------------ */
 h1, h2, h3, h4 {
-  font-family: var(--font-serif-bold);
+  font-family: var(--font-serif);
   line-height: 1.15;
   font-weight: 700;
 }
 
 .section-title {
-  font-family: var(--font-serif-bold);
+  font-family: var(--font-serif);
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
   color: var(--color-text-primary);
@@ -123,7 +128,7 @@ h1, h2, h3, h4 {
 .section-container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--space-xl) var(--space-md);
+  padding: var(--space-lg) var(--space-md);
 }
 
 
@@ -159,9 +164,9 @@ h1, h2, h3, h4 {
 }
 
 .btn-secondary {
+  border: 1px solid var(--color-secondary);
+  color: var(--color-text-on-dark-primary);
   background-color: transparent;
-  color: var(--color-text-primary);
-  border: 1px solid var(--color-border);
 }
 
 .btn-secondary:hover {
