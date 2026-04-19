@@ -99,11 +99,11 @@
 .hero-container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: var(--space-xl) var(--space-md);
+  padding: var(--space-lg) var(--space-md);
 }
 
 .hero-eyebrow {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--color-accent);
   letter-spacing: 0.1em;
@@ -113,6 +113,7 @@
 
 .hero-name {
   font-family: var(--font-serif);
+  color: var(--color-text-on-dark-primary);
   font-size: clamp(3.5rem, 10vw, 7rem);
   font-weight: 700;
   font-style: italic;
@@ -132,7 +133,7 @@
   font-family: var(--font-serif);
   font-size: clamp(1.5rem, 4vw, 2.5rem);
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--color-text-on-dark-secondary);
   margin-bottom: var(--space-md);
 }
 
@@ -147,7 +148,7 @@
 .hero-availability-text {
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--color-accent);
+  color: var(--color-text-on-dark-secondary);
   margin-bottom: var(--space-md);
 }
 
@@ -162,7 +163,8 @@
    BIO & SKILLS
    ------------------------------------------------------------ */
 .bio-skills {
-  background-color: var(--color-bg-card);
+  background-color: var(--color-bg-light);
+  border-top: 1px solid #ece8e0;
 }
 
 .bio-intro {
@@ -172,7 +174,7 @@
   line-height: 1.75;
   max-width: 800px;
   margin: 0 auto var(--space-md);
-  text-align: center;
+  text-align: left;
 }
 
 .bio-divider {
@@ -185,29 +187,39 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-md);
+  padding-left: var(--space-md);
 }
 
 .skills-heading {
   font-family: var(--font-serif);
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--color-text-primary);
   margin-bottom: var(--space-sm);
+  text-align: left;
 }
 
 .skills-list {
   list-style: none;
+  text-align: left;
 }
 
 .skills-list li {
   font-family: var(--font-sans);
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--color-text-primary);
-  opacity: 0.55;
-  padding: 0.3rem 0 0.3rem 1rem;
+  padding: 0.3rem 0;
   line-height: 1.5;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.skills-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
 }
 
 
