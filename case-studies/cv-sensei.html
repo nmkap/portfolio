@@ -44,7 +44,7 @@
               class="nav-link"
               target="_blank"
               rel="noopener noreferrer"
-            >Resume</a>
+            >Résumé</a>
           </li>
           <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
         </ul>
@@ -307,8 +307,8 @@
         <h3 style="margin-top:48px;">Mockups</h3>
 
         <!-- HMW 1 -->
-        <p style="font-family:sans-serif; font-size:13px; color:#888; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">HMW 1: Effort vs. Outcome</p>
-        <p><em>How might we reduce the time and cognitive load of CV editing without making the output feel generic or AI-generated?</em></p>
+        <p class="hmw-label">HMW 1: Effort vs. Outcome</p>
+        <p class="hmw-question">How might we reduce the time and cognitive load of CV editing without making the output feel generic or AI-generated?</p>
         <div class="mockup-row">
           <div class="mockup-screen">
             <span class="label">Mockup — Three-panel chat view</span>
@@ -320,8 +320,8 @@
         </div>
 
         <!-- HMW 2 -->
-        <p style="font-family:sans-serif; font-size:13px; color:#888; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">HMW 2: Experience vs. Expression</p>
-        <p><em>How might we design an AI collaboration model where users feel like the author, not the passenger?</em></p>
+        <p class="hmw-label">HMW 2: Experience vs. Expression</p>
+        <p class="hmw-question">How might we design an AI collaboration model where users feel like the author, not the passenger?</p>
         <div class="mockup-row mockup-row--reverse">
           <div class="mockup-screen">
             <span class="label">Mockup — Changes panel view</span>
@@ -333,8 +333,8 @@
         </div>
 
         <!-- HMW 3 -->
-        <p style="font-family:sans-serif; font-size:13px; color:#888; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">HMW 3: Visibility vs. Authenticity</p>
-        <p><em>How might we surface ATS keyword gaps in a way that feels actionable rather than overwhelming — and that preserves the user's authentic voice?</em></p>
+        <p class="hmw-label">HMW 3: Visibility vs. Authenticity</p>
+        <p class="hmw-question">How might we surface ATS keyword gaps in a way that feels actionable rather than overwhelming — and that preserves the user's authentic voice?</p>
         <div class="mockup-row">
           <div class="mockup-screen">
             <span class="label">Mockup — ATS score &amp; keyword badges</span>
@@ -346,8 +346,8 @@
         </div>
 
         <!-- HMW 4 -->
-        <p style="font-family:sans-serif; font-size:13px; color:#888; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px;">HMW 4: Content vs. Structure</p>
-        <p><em>How might we help users decide what to include and in what order — so their CV reflects what's most relevant, not just what's most recent?</em></p>
+        <p class="hmw-label">HMW 4: Content vs. Structure</p>
+        <p class="hmw-question">How might we help users decide what to include and in what order — so their CV reflects what's most relevant, not just what's most recent?</p>
         <div class="mockup-row mockup-row--reverse">
           <div class="mockup-screen">
             <span class="label">Mockup — Expanded CV document view</span>
@@ -418,7 +418,7 @@
         </div>
         <p>Users reported uncertainty about whether each dashboard card represented a CV coaching session or a finished document. The redesign resolved this by adding contextual metadata to each card — message count, last edited date, ATS score, and a "Continue" button — making it immediately clear that each card is an active coaching session, not a static file. The ambiguous "Add a new CV" button was replaced with a "New CV" card carrying the instruction "drag and drop an existing CV, or start from scratch" — removing any guesswork about what the action does.</p>
 
-        <h3 style="margin-top:48px;">Before &amp; After — Design Iteration 02</h3>
+        <h3 style="margin-top:80px;">Before &amp; After — Design Iteration 02</h3>
         <p>The second round of usability testing validated the core redesign decisions. Participants responded positively to the two-panel layout, describing the live CV preview as "intuitive and helpful" — both as a real-time change tracker and as a document preview. Testing also surfaced three targeted improvements to the onboarding flow on the "New CV" page.</p>
 
         <div class="wireframe-grid">
@@ -438,18 +438,14 @@
           <div class="hmw-item"><strong>3. Progressive disclosure via step completion</strong> — Once a CV is successfully uploaded, Step 1 is marked complete and Step 2 unlocks. The active state change provides clear system feedback, confirming the upload was successful before the coaching session begins.</div>
         </div>
 
-        <hr>
-
         <h3>Accessibility Considerations</h3>
         <div class="a11y-card" style="border-top: 1px solid #ddd; padding: 24px 0;">
-          <div class="mockup-row" style="margin: 0;">
-            <div class="mockup-text">
-              <h3>WCAG Colour Contrast</h3>
-              <p style="max-width:none;">A full colour audit against WCAG AA standards identified three issues in the original palette — redundant accent shades, near-identical light surfaces, and a missing mid-tone creating an abrupt tonal jump. The palette was consolidated and each colour assigned a defined role, ensuring full AA compliance across all contexts.</p>
-            </div>
-            <div>
-              <span class="label">WCAG Colour Contrast Diagram</span>
-              <img src="../assets/images/cv-sensei/design/WCAG-diagram.png" alt="WCAG colour contrast diagram showing palette audit and AA compliance" style="width:100%;" />
+          <div class="wcag-block">
+            <span class="label">WCAG Colour Contrast Diagram</span>
+            <img src="../assets/images/cv-sensei/design/WCAG-diagram.png" alt="WCAG colour contrast diagram showing palette audit and AA compliance" style="width:100%;" />
+            <div class="wcag-text">
+              <h4>WCAG Colour Contrast</h4>
+              <p>A full colour audit against WCAG AA standards identified three issues in the original palette — redundant accent shades, near-identical light surfaces, and a missing mid-tone creating an abrupt tonal jump. The palette was consolidated and each colour assigned a defined role, ensuring full AA compliance across all contexts.</p>
             </div>
           </div>
         </div>
@@ -498,31 +494,18 @@
         <div class="reflection-grid">
           <div class="reflection-card">
             <h3>What I Learned</h3>
-            <p style="max-width:none;">Working on this project solo taught me that following the design framework from start to finish — 
-              rather than jumping straight to solutions built on assumptions — is what separates a functioning product from one that 
-              genuinely matters to people. Every stage I was tempted to skip (writing research questions before interviews, 
-              defining HMW questions before wireframing) turned out to be the stage that most directly shaped a better design decision downstream.
-            </p>
-            <p style="max-width:none;">
-              I also learned that AI-powered products introduce a specific UX challenge that general design principles 
-              don't fully prepare you for: users need to feel like collaborators, not passengers. 
-              Getting that balance right — giving the AI enough authority to be useful while keeping the user in control 
-              of every output — was the central design problem of this project, and it shaped decisions across every screen.
-            </p>
-            <p style="max-width:none;">
-              On a craft level, this was my first time working through a full design system, 
-              performing a comprehensive colour audit against WCAG AA standards, building responsive 
-              & high fidelity mockups and approaching iteration as a deliberate phase rather than a reaction 
-              to something going wrong. Those habits are now part of how I work.</p>
-            </p>
-
-
+            <ul>
+              <li>Following the design framework end to end — rather than jumping to solutions — is what separates a functioning product from one that genuinely matters to people. Every stage I was tempted to skip turned out to directly shape a better decision downstream.</li>
+              <li>AI-powered products introduce a UX challenge general principles don't fully cover: users need to feel like collaborators, not passengers. That balance was the central design problem of this project.</li>
+              <li>On a craft level: my first full design system, first WCAG colour audit, first high-fidelity responsive mockups — and learning to treat iteration as a deliberate phase, not a reaction.</li>
+            </ul>
           </div>
           <div class="reflection-card">
             <h3>What I'd Do Differently</h3>
-            <p style="max-width:none;">As my first end-to-end solo project, this section could easily be its own case study. I'll keep it to the two that would most change how I'd approach the next one.</p>
-            <p style="max-width:none;">In hindsight, I'd establish the design system as a complete, component-based foundation before building any screens. I moved into mockups while the system was still partially defined, which meant revisiting decisions mid-build — spacing tokens, component states, interactive variants — that should have been resolved upfront. It slowed the process down in ways that a more disciplined setup phase would have prevented.</p>
-            <p style="max-width:none;">I also approached this project as an improvement to an existing product — which shaped every decision, including what questions I asked in research. With more distance, I'd take a step back earlier and ask whether the same user problems might be better solved through an entirely different interaction model. That's a harder question to hold open once you're already building, which is why it needs to happen at the research stage — before assumptions calcify into decisions.</p>
+            <ul>
+              <li>Establish the design system as a complete, component-based foundation before touching any screens. Moving into mockups while it was still partially defined meant revisiting decisions mid-build that should have been resolved upfront.</li>
+              <li>Question the brief earlier. I approached this as improving an existing product — which shaped every decision including my research questions. With more distance, I'd ask whether the same user problems might call for an entirely different solution before assuming the direction.</li>
+            </ul>
           </div>
         </div>
 
@@ -539,18 +522,86 @@
         </div>
       </div>
     </section>
+   
+    <!-- ============================================================
+         CONTACT
+    ============================================================ -->
+     <section class="contact" id="contact">
+      <div class="section-container">
 
-
-    <!-- ══════════════════════════════════════
-         NEXT PROJECT CTA
-    ══════════════════════════════════════ -->
-    <section class="dark" style="text-align:center;">
-      <div class="page">
-        <p style="color:#888; font-family:sans-serif; font-size:13px; margin: 0 auto 16px;">Next Project</p>
-        <h2>[ Next Project Title ]</h2>
-        <div style="margin-top:24px;">
-          <a href="../index.html#work" class="btn btn-primary">View All Projects</a>
+        <div class="section-header">
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">
+            I'm actively looking for UX and frontend roles. 
+            Whether you want to talk about a project, a position, 
+            or just make contact — I'd love to hear from you.
+          </p>
         </div>
+
+        <a
+          href="https://linkedin.com/in/wksudak"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary contact-linkedin-btn"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          Connect on LinkedIn
+        </a>
+
+        <div class="form-divider">
+          <span>OR DROP ME A MESSAGE:</span>
+        </div>
+
+        <form
+          class="contact-form"
+          id="contact-form"
+          action="https://formspree.io/f/mnjlzlgr"
+          method="POST"
+        >
+          <div class="form-row">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              class="form-input form-textarea"
+              placeholder="Tell me about your project..."
+              rows="6"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary contact-submit-btn">
+            Send Message
+          </button>
+
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+
+        </form>
+
       </div>
     </section>
 
@@ -561,24 +612,34 @@
     <footer class="footer">
       <div class="footer-container">
         <p class="footer-copy">
-          &copy; <span id="footer-year"></span> Wiktoria Sudak. Designed &amp; built by me.
+          &copy; <span id="footer-year"></span> Wiktoria Sudak.
         </p>
         <ul class="footer-links">
           <li>
             <a
-              href="https://linkedin.com/in/yourhandle"
+              href="https://linkedin.com/in/wksudak"
               target="_blank"
               rel="noopener noreferrer"
               class="footer-link"
-            >LinkedIn</a>
+              aria-label="LinkedIn"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
           </li>
           <li>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/nmkap"
               target="_blank"
               rel="noopener noreferrer"
               class="footer-link"
-            >GitHub</a>
+              aria-label="GitHub"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -587,76 +648,7 @@
 
     <!-- Scripts -->
     <script src="../js/main.js"></script>
-    <script>
-      document.getElementById('footer-year').textContent = new Date().getFullYear();
-    </script>
-    <script>
-      (function () {
-        const carousel = document.getElementById('personaCarousel');
-        const track = carousel.querySelector('.persona-carousel-track');
-        const hint = carousel.querySelector('.persona-scroll-hint');
-        let isDragging = false;
-        let startX, startScrollLeft;
-
-        carousel.addEventListener('mouseenter', () => {
-          hint.classList.add('persona-scroll-hint--visible');
-        });
-
-        carousel.addEventListener('mouseleave', () => {
-          hint.classList.remove('persona-scroll-hint--visible');
-          isDragging = false;
-          track.style.cursor = '';
-        });
-
-        track.addEventListener('mousedown', (e) => {
-          isDragging = true;
-          startX = e.clientX;
-          startScrollLeft = track.scrollLeft;
-          track.style.cursor = 'grabbing';
-        });
-
-        window.addEventListener('mouseup', () => {
-          isDragging = false;
-          track.style.cursor = '';
-        });
-
-        track.addEventListener('mousemove', (e) => {
-          if (!isDragging) return;
-          e.preventDefault();
-          track.scrollLeft = startScrollLeft - (e.clientX - startX);
-        });
-
-        // Hide hint once user has scrolled
-        track.addEventListener('scroll', () => {
-          if (track.scrollLeft > 40) hint.style.opacity = '0';
-          else hint.style.opacity = '';
-        }, { passive: true });
-      })();
-    </script>
-    <script>
-      (function () {
-        const vid = document.getElementById('keyFeatureVideo');
-
-        function inView() {
-          const r = vid.getBoundingClientRect();
-          return r.top < window.innerHeight && r.bottom > 0;
-        }
-
-        // Scroll handler is a synchronous user gesture — Safari allows play() here
-        document.addEventListener('scroll', function () {
-          if (inView()) { if (vid.paused) vid.play().catch(() => {}); }
-          else           { vid.pause(); }
-        }, { passive: true });
-
-        // Chrome / Firefox: IntersectionObserver doesn't need a gesture
-        if ('IntersectionObserver' in window) {
-          new IntersectionObserver(function (entries) {
-            if (entries[0].isIntersecting) vid.play().catch(() => {});
-            else vid.pause();
-          }, { threshold: 0.1 }).observe(vid);
-        }
-      })();
-    </script>
+    <script src="../js/case-study.js"></script>
 
   </body>
 </html>
