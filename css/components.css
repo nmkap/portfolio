@@ -1116,3 +1116,43 @@
 
 /* ── DIVIDER ── */
 .case-study-page hr { border: none; border-top: 1px solid #bbb; margin: 40px 0; }
+
+/* ── Video wrapper & Safari play button ─────────────────────── */
+/*
+ * .video-wrapper is injected by JS only in Safari.
+ * It inherits the video's display context and adds
+ * the stacking context needed for the button overlay.
+ */
+.video-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.video-wrapper video {
+  display: block;
+  width: 100%;
+}
+
+.video-play-btn {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.28);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, opacity 0.3s ease;
+  color: #fff;
+}
+
+.video-play-btn:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.video-play-btn svg {
+  width: 72px;
+  height: 72px;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.4));
+}

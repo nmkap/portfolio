@@ -37,48 +37,78 @@ document.getElementById('footer-year').textContent = new Date().getFullYear();
 })();
 
 
-/* ── Video scroll-play helper ───────────────────────────────── */
+/* ── Safari detection ───────────────────────────────────────── */
 /*
- * Safari's autoplay policy blocks HTMLMediaElement.play() unless it
- * originates from a direct user interaction (tap / click).
- * A scroll event does NOT count as a user gesture in Safari — even
- * though it does in Chrome/Firefox — so IntersectionObserver-triggered
- * play() calls silently fail.
- *
- * Fix: use touchend (which IS a user gesture in Safari on iOS/iPadOS)
- * as the primary trigger on touch devices, with IntersectionObserver
- * as the fallback for pointer devices. We also check visibility on
- * DOMContentLoaded so videos already in view on load aren't missed.
+ * Targets Safari specifically — not all WebKit browsers.
+ * Excludes Chrome/Edge/Brave (which include 'Chrome' in their UA)
+ * and Android browsers. Desktop Chrome also contains 'Safari' in
+ * its UA string, so the negative lookahead for 'chrome' is required.
  */
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+
+/* ── Video setup ────────────────────────────────────────────── */
 function setupScrollVideo(id) {
   const vid = document.getElementById(id);
   if (!vid) return;
 
-  /* Ensure the element is fully prepared for Safari inline playback */
-  vid.muted        = true;
-  vid.playsInline  = true;
-  vid.loop         = true;
+  vid.muted       = true;
+  vid.playsInline = true;
+  vid.loop        = true;
   vid.setAttribute('playsinline', '');
   vid.setAttribute('webkit-playsinline', '');
 
+  if (isSafari) {
+    setupSafariPlayButton(vid);
+  } else {
+    setupAutoplay(vid);
+  }
+}
+
+
+/* ── Safari path: tap-to-play overlay ──────────────────────── */
+function setupSafariPlayButton(vid) {
+  /*
+   * Wrap the video in a positioned container so the play button
+   * can be layered on top without touching the HTML markup.
+   */
+  const wrapper = document.createElement('div');
+  wrapper.className = 'video-wrapper';
+  vid.parentNode.insertBefore(wrapper, vid);
+  wrapper.appendChild(vid);
+
+  const btn = document.createElement('button');
+  btn.className = 'video-play-btn';
+  btn.setAttribute('aria-label', 'Play video');
+  btn.innerHTML = `
+    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="32" cy="32" r="31" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.25"/>
+      <polygon points="26,20 26,44 46,32" fill="currentColor"/>
+    </svg>
+  `;
+  wrapper.appendChild(btn);
+
+  btn.addEventListener('click', () => {
+    btn.style.opacity       = '0';
+    btn.style.pointerEvents = 'none';
+    vid.play().catch(() => {});
+  });
+}
+
+
+/* ── Non-Safari path: IntersectionObserver scroll-autoplay ─── */
+function setupAutoplay(vid) {
   function isVisible() {
     const r = vid.getBoundingClientRect();
-    const visibleHeight = Math.min(r.bottom, window.innerHeight) - Math.max(r.top, 0);
-    return visibleHeight / r.height >= 0.3;
+    const visible = Math.min(r.bottom, window.innerHeight) - Math.max(r.top, 0);
+    return visible / r.height >= 0.3;
   }
 
   function tryPlay() {
-    if (isVisible() && vid.paused) {
-      vid.play().catch(() => {});
-    } else if (!isVisible() && !vid.paused) {
-      vid.pause();
-    }
+    if (isVisible() && vid.paused)        vid.play().catch(() => {});
+    else if (!isVisible() && !vid.paused) vid.pause();
   }
 
-  /* 1. Check on load (handles videos already in the viewport) */
-  document.addEventListener('DOMContentLoaded', tryPlay);
-
-  /* 2. IntersectionObserver — reliable on Chrome, Firefox, modern Safari */
   if ('IntersectionObserver' in window) {
     new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) vid.play().catch(() => {});
@@ -86,13 +116,10 @@ function setupScrollVideo(id) {
     }, { threshold: 0.3 }).observe(vid);
   }
 
-  /* 3. scroll — covers desktop Safari */
-  window.addEventListener('scroll', tryPlay, { passive: true });
-
-  /* 4. touchend — direct user gesture in Safari on iOS/iPadOS.
-        Fires after every swipe, giving Safari permission to call play(). */
+  window.addEventListener('scroll',   tryPlay, { passive: true });
   window.addEventListener('touchend', tryPlay, { passive: true });
 }
+
 
 setupScrollVideo('keyFeatureVideo');
 setupScrollVideo('finalDesignVideo');
