@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#1C1B18"/>
+  <text x="52" y="272"
+        font-family="Lora"
+        font-size="224"
+        font-weight="700"
+        font-style="italic"
+        fill="#F0E1D1">W</text>
+  <text x="222" y="272"
+        font-family="Lora"
+        font-size="224"
+        font-weight="700"
+        font-style="italic"
+        fill="#B7410E">S</text>
+</svg>

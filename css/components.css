@@ -36,12 +36,15 @@
 }
 
 .nav-logo {
-  font-family: var(--font-serif);
-  font-size: 1.25rem;
-  font-weight: 300;
-  color: var(--color-text-on-dark-primary);
-  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
   transition: opacity var(--transition);
+}
+
+.nav-logo img {
+  height: 50px;
+  width: auto;
+  display: block;
 }
 
 .nav-logo:hover {
