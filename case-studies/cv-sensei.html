@@ -100,7 +100,7 @@
         <h2>Origin</h2>
 
         <p>CV Sensei started as a group AI project during a software development bootcamp. All five of us shared the same frustration: updating and tailoring a CV felt disproportionately time-consuming for something we had to do so often. We validated the idea through conversations with other students and our bootcamp instructors, using our shared frustration to form the question: "What if AI could solve this issue?"</p>
-        <p>We built a working AI-powered CV assistant aimed at job seekers who apply to multiple roles within a week. But as the bootcamp ended, one question stayed with me:</p>
+        <p>We built a <a href="https://cvsensei-8d86cfaecbdb.herokuapp.com" target="_blank" rel="noopener noreferrer" class="inline-accent-link">live AI-powered CV assistant</a> aimed at job seekers who apply to multiple roles within a week. But as the bootcamp ended, one question stayed with me:</p>
         <blockquote class="origin-question">"What would make someone choose this over any other free AI chatbot they already use?"</blockquote>
       </section>
 
@@ -278,7 +278,10 @@
         <p style="font-family:sans-serif; font-size:13px; color:#888; font-style:italic; margin-bottom:48px;">Auth is deferred to the download step — users experience full value before committing to an account.</p>
 
         <h3>UX Architecture</h3>
-        <p>Once the user flows were mapped, I translated them into a full site hierarchy — creating a sitemap that gave me a bird's-eye view of the product structure and further exposed what the bootcamp version was missing. Mapping task flows in parallel helped surface the disconnect between our original structure and the mental models users described in research, leading to several structural changes before a single wireframe was drawn.</p>
+        <p>Once the user flows were mapped, I translated them into a full site hierarchy — 
+          creating a sitemap that gave me a bird's-eye view of the product structure and further exposed what the bootcamp version was missing. 
+          The final sitemap below reflects the full intended product architecture, including user settings, help centre and footer.
+          Mapping task flows in parallel helped surface the disconnect between our original structure and the mental models users described in research, leading to several structural changes before a single wireframe was drawn.</p>
         <div class="wireframe-grid">
           <div>
             <span class="label">Sitemap</span>
@@ -418,7 +421,7 @@
         </div>
         <p>Users reported uncertainty about whether each dashboard card represented a CV coaching session or a finished document. The redesign resolved this by adding contextual metadata to each card — message count, last edited date, ATS score, and a "Continue" button — making it immediately clear that each card is an active coaching session, not a static file. The ambiguous "Add a new CV" button was replaced with a "New CV" card carrying the instruction "drag and drop an existing CV, or start from scratch" — removing any guesswork about what the action does.</p>
 
-        <h3 style="margin-top:80px;">Before &amp; After — Design Iteration 02</h3>
+        <h3 style="margin-top:80px;">Further Refinements — Design Iteration 02</h3>
         <p>The second round of usability testing validated the core redesign decisions. Participants responded positively to the two-panel layout, describing the live CV preview as "intuitive and helpful" — both as a real-time change tracker and as a document preview. Testing also surfaced three targeted improvements to the onboarding flow on the "New CV" page.</p>
 
         <div class="wireframe-grid">
@@ -456,30 +459,16 @@
     <!-- ══════════════════════════════════════
          SECTION 8 — FINAL DESIGN
     ══════════════════════════════════════ -->
-    <section class="dark">
+    <section>
       <div class="page">
         <h2>Final Design</h2>
 
-        <span class="label" style="color:#888;">Product Video — Main User Flow</span>
-        <div class="placeholder" style="height:460px; width:100%; margin-bottom:48px;">
-          [ Full Product Video Placeholder — Main User Flow ]
-        </div>
+        <span class="label">Product Snapshot — Landing Page</span>
+        <p>To see the full user flow and key product features, <a href="#keyFeatureVideo" class="inline-accent-link">click here</a>.</p>
+        <video id="finalDesignVideo" loop muted playsinline preload="auto" style="width:100%; display:block; margin-bottom:48px;">
+          <source src="../assets/videos/final-design.mp4" type="video/mp4">
+        </video>
 
-        <h3>Final Screens</h3>
-        <div class="final-screens">
-          <div>
-            <span class="label" style="color:#888;">Screen 01</span>
-            <div class="placeholder" style="height:260px;">[ Final Screen ]</div>
-          </div>
-          <div>
-            <span class="label" style="color:#888;">Screen 02</span>
-            <div class="placeholder" style="height:260px;">[ Final Screen ]</div>
-          </div>
-          <div>
-            <span class="label" style="color:#888;">Screen 03</span>
-            <div class="placeholder" style="height:260px;">[ Final Screen ]</div>
-          </div>
-        </div>
       </div>
     </section>
 

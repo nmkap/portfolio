@@ -382,6 +382,7 @@
    ------------------------------------------------------------ */
 .contact {
   background-color: var(--color-bg-dark);
+  padding-top: var(--space-md);
 }
 
 .contact .section-container {
@@ -1088,13 +1089,6 @@
   padding: 24px 0;
 }
 
-/* ── FINAL DESIGN ── */
-.final-screens {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  margin: 32px 0;
-}
 
 /* ── REFLECTION ── */
 .reflection-grid {

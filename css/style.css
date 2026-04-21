@@ -176,6 +176,17 @@ h1, h2, h3, h4 {
   color: var(--color-accent-hover);
 }
 
+.inline-accent-link {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.inline-accent-link:hover {
+  color: var(--color-accent-hover);
+}
+
 .btn-full {
   width: 100%;
   justify-content: center;

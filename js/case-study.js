@@ -64,3 +64,24 @@ document.getElementById('footer-year').textContent = new Date().getFullYear();
     }, { threshold: 0.1 }).observe(vid);
   }
 })();
+
+(function () {
+  const vid = document.getElementById('finalDesignVideo');
+
+  function inView() {
+    const r = vid.getBoundingClientRect();
+    return r.top < window.innerHeight && r.bottom > 0;
+  }
+
+  document.addEventListener('scroll', function () {
+    if (inView()) { if (vid.paused) vid.play().catch(() => {}); }
+    else           { vid.pause(); }
+  }, { passive: true });
+
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) vid.play().catch(() => {});
+      else vid.pause();
+    }, { threshold: 0.1 }).observe(vid);
+  }
+})();
