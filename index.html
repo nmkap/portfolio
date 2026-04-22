@@ -70,8 +70,7 @@
           <a
             href="assets/wiktoria-sudak-resume.pdf"
             class="btn btn-secondary"
-            download="Wiktoria-Sudak-Resume.pdf"
-            rel="noopener noreferrer"
+            onclick="fetch(this.href).then(r=>r.blob()).then(b=>{const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='Wiktoria-Sudak-Resume.pdf';a.click()});return false;"
           >Download Résumé</a>
         </div>
 
