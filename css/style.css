@@ -66,6 +66,7 @@ html {
   scroll-padding-top: var(--nav-height);
   font-size: 18px;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -74,7 +75,6 @@ body {
   color: var(--color-text-primary);
   line-height: 1.7;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 img {
