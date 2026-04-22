@@ -1,0 +1,381 @@
+/* ============================================================
+   RESUME PAGE — resume.css
+   Inherits: root tokens from style.css, navbar/footer from components.css
+   ============================================================ */
+
+
+/* ── PAGE BACKGROUND ── */
+.resume-page {
+  background-color: var(--color-bg-light);
+}
+
+/* ── CENTRED DOCUMENT WRAPPER ── */
+.resume-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: calc(var(--nav-height) + 2.5rem) var(--space-md) var(--space-lg);
+}
+
+/* ── LAYOUT SHELL ── */
+.resume-layout {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow:
+    0 4px 12px rgba(28, 27, 24, 0.08),
+    0 20px 60px rgba(28, 27, 24, 0.12);
+}
+
+
+/* ── SIDEBAR ── */
+.resume-sidebar {
+  background-color: var(--color-bg-dark);
+  padding: 2.5rem 1.75rem 3rem;
+}
+
+
+/* ── PHOTO ── */
+.sidebar-photo-wrap {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 2rem;
+}
+
+.sidebar-photo-accent {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  bottom: -10px;
+  left: -18px;
+  z-index: 0;
+}
+
+.sidebar-photo-placeholder {
+  position: relative;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  color: var(--color-text-on-dark-muted);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+
+/* ── IDENTITY ── */
+.sidebar-identity {
+  margin-bottom: 1.75rem;
+}
+
+.sidebar-name {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--color-text-on-dark-primary);
+  line-height: 1.08;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.sidebar-title-badge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-text-on-dark-primary);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+}
+
+
+/* ── SIDEBAR SECTIONS ── */
+.sidebar-section {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.sidebar-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.sidebar-heading {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.85rem;
+}
+
+
+/* ── CONTACT LIST ── */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 4px;
+  flex-shrink: 0;
+  color: var(--color-text-on-dark-secondary);
+}
+
+.contact-text {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-text-on-dark-secondary);
+  line-height: 1.4;
+  word-break: normal;
+  transition: color var(--transition);
+}
+
+a.contact-text:hover {
+  color: var(--color-accent);
+}
+
+
+/* ── SKILLS LIST ── */
+.sidebar-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.sidebar-skills li {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-text-on-dark-secondary);
+  line-height: 1.5;
+  padding-left: 0.95rem;
+  position: relative;
+}
+
+.sidebar-skills li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.learning-tag {
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--color-text-on-dark-muted);
+  font-weight: 400;
+}
+
+
+/* ── MAIN CONTENT ── */
+.resume-main {
+  background-color: var(--color-bg-white);
+  padding: 3rem 3.25rem 4rem;
+}
+
+
+/* ── BIO ── */
+.resume-bio {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(28, 27, 24, 0.1);
+}
+
+.resume-bio p {
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--color-text-primary);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.resume-bio p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ── SECTION BANNERS ── */
+.resume-section-banner {
+  display: inline-block;
+  font-family: var(--font-serif);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-text-on-dark-primary);
+  background-color: var(--color-bg-dark);
+  padding: 0.5rem 1.4rem;
+  border-radius: 100px;
+  margin-bottom: 1.75rem;
+}
+
+
+/* ── RESUME SECTION ── */
+.resume-section {
+  margin-bottom: 2.5rem;
+}
+
+
+/* ── ENTRY ── */
+.resume-entry {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(28, 27, 24, 0.08);
+}
+
+.resume-entry:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.entry-accent {
+  width: 3px;
+  background-color: var(--color-accent);
+  border-radius: 2px;
+  flex-shrink: 0;
+  align-self: stretch;
+  min-height: 100%;
+}
+
+.entry-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.entry-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.25;
+  margin-bottom: 0.3rem;
+}
+
+.entry-meta {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  margin-bottom: 0.65rem;
+}
+
+.entry-meta strong {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.entry-desc {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--color-text-primary);
+  line-height: 1.75;
+  margin: 0;
+}
+
+
+/* ── BULLET LISTS ── */
+.entry-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.entry-bullets li {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  color: var(--color-text-primary);
+  line-height: 1.7;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.entry-bullets li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-text-muted);
+}
+
+
+/* ── RESPONSIVE ── */
+@media (max-width: 960px) {
+  .resume-layout {
+    grid-template-columns: 300px 1fr;
+  }
+
+  .resume-sidebar {
+    padding: 2rem 1.4rem 2.5rem;
+  }
+
+  .sidebar-name {
+    font-size: 1.75rem;
+  }
+
+  .resume-main {
+    padding: 2.5rem 2rem 3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .resume-wrapper {
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+  }
+
+  .resume-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-sidebar {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .sidebar-photo-wrap {
+    margin-bottom: 1.75rem;
+  }
+
+  .resume-main {
+    padding: 2rem 1.5rem 3rem;
+  }
+}
