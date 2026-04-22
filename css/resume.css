@@ -9,11 +9,17 @@
   background-color: var(--color-bg-light);
 }
 
-/* ── CENTRED DOCUMENT WRAPPER ── */
+/* ── VIEWPORT: clips overflow, provides nav offset, height managed by JS ── */
+.resume-viewport {
+  padding-top: calc(var(--nav-height) + 1.5rem);
+  overflow: hidden;
+}
+
+/* ── FIXED-WIDTH DOCUMENT — scaled by JS to fit any screen ── */
 .resume-wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: calc(var(--nav-height) + 2.5rem) var(--space-md) var(--space-lg);
+  width: 1100px;
+  padding: 0 var(--space-md) var(--space-lg);
+  transform-origin: top left;
 }
 
 /* ── LAYOUT SHELL ── */
@@ -331,127 +337,3 @@ a.contact-text:hover {
 }
 
 
-/* ── RESPONSIVE ── */
-@media (max-width: 960px) {
-  .resume-layout {
-    grid-template-columns: 280px 1fr;
-  }
-
-  .resume-sidebar {
-    padding: 2rem 1.4rem 2.5rem;
-  }
-
-  .sidebar-name {
-    font-size: 1.75rem;
-  }
-
-  .sidebar-heading {
-    font-size: 0.9rem;
-  }
-
-  .contact-text,
-  .sidebar-skills li {
-    font-size: 0.9rem;
-  }
-
-  .sidebar-title-badge {
-    padding-left: 1.4rem;
-    margin-left: -1.4rem;
-  }
-
-  .resume-main {
-    padding: 2.5rem 2rem 3rem;
-  }
-
-  .resume-section-banner {
-    font-size: 0.9rem;
-    padding-left: 2rem;
-    margin-left: -2rem;
-  }
-
-  .entry-title {
-    font-size: 1.1rem;
-  }
-
-  .entry-meta {
-    font-size: 0.88rem;
-  }
-
-  .resume-bio p,
-  .entry-desc,
-  .entry-bullets li {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 700px) {
-  .resume-wrapper {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .resume-layout {
-    grid-template-columns: 220px 1fr;
-    border-radius: 0;
-  }
-
-  .resume-sidebar {
-    padding: 2rem 1.1rem 2.5rem;
-  }
-
-  .sidebar-name {
-    font-size: 1.4rem;
-  }
-
-  .sidebar-title-badge {
-    font-size: 0.7rem;
-    letter-spacing: 0.12em;
-    padding-left: 1.1rem;
-    margin-left: -1.1rem;
-  }
-
-  .sidebar-heading {
-    font-size: 0.78rem;
-  }
-
-  .contact-text,
-  .sidebar-skills li,
-  .learning-tag {
-    font-size: 0.78rem;
-  }
-
-  .sidebar-photo-wrap {
-    width: 140px;
-    height: 140px;
-    margin-bottom: 1.5rem;
-  }
-
-  .sidebar-photo {
-    width: 140px;
-    height: 140px;
-  }
-
-  .resume-main {
-    padding: 2rem 1.25rem 3rem;
-  }
-
-  .resume-section-banner {
-    font-size: 0.82rem;
-    padding-left: 1.25rem;
-    margin-left: -1.25rem;
-  }
-
-  .entry-title {
-    font-size: 1rem;
-  }
-
-  .entry-meta {
-    font-size: 0.8rem;
-  }
-
-  .resume-bio p,
-  .entry-desc,
-  .entry-bullets li {
-    font-size: 0.875rem;
-  }
-}

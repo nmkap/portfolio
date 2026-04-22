@@ -73,3 +73,29 @@ const yearEl = document.getElementById('footer-year');
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
 }
+
+
+// ------------------------------------------------------------
+// Resume: fixed-width PDF-style scaling
+// Lock the document at 1100px and scale proportionally to fit
+// any viewport, mirroring how PDF viewers render pages.
+// ------------------------------------------------------------
+const resumeWrapper = document.querySelector('.resume-wrapper');
+const resumeViewport = document.querySelector('.resume-viewport');
+
+if (resumeWrapper && resumeViewport) {
+  const DOC_WIDTH = 1100;
+
+  function scaleResume() {
+    const vw = window.innerWidth;
+    const scale = Math.min(1, vw / DOC_WIDTH);
+    const offsetX = (vw - DOC_WIDTH * scale) / 2;
+
+    resumeWrapper.style.transform = `translateX(${offsetX}px) scale(${scale})`;
+    // Add a fixed 64px bottom gap that doesn't shrink with the document
+    resumeViewport.style.height = Math.ceil(resumeWrapper.scrollHeight * scale + 64) + 'px';
+  }
+
+  scaleResume();
+  window.addEventListener('resize', scaleResume, { passive: true });
+}
