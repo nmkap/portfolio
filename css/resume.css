@@ -9,6 +9,14 @@
   background-color: var(--color-bg-light);
 }
 
+/* ── DOWNLOAD CTA ── */
+.resume-download-cta {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem var(--space-md);
+  background-color: var(--color-bg-light);
+}
+
 /* ── VIEWPORT: clips overflow, provides nav offset, height managed by JS ── */
 .resume-viewport {
   padding-top: calc(var(--nav-height) + 1.5rem);

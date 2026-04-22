@@ -4,14 +4,25 @@
 
 // ------------------------------------------------------------
 // Navbar: add .scrolled class after user scrolls past 20px
+// Scroll hint: hide once user scrolls past the hero
 // ------------------------------------------------------------
 const navbar = document.getElementById('navbar');
+const scrollHint = document.querySelector('.scroll-hint');
+
+if (scrollHint) {
+  setTimeout(() => { scrollHint.style.opacity = '1'; }, 1000);
+}
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 20) {
     navbar.classList.add('scrolled');
   } else {
     navbar.classList.remove('scrolled');
+  }
+
+  if (scrollHint) {
+    const heroBottom = document.getElementById('hero')?.getBoundingClientRect().bottom ?? 0;
+    scrollHint.style.opacity = heroBottom <= 0 ? '0' : '1';
   }
 }, { passive: true });
 

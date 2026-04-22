@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Lora:ital,wght@0,600;0,700;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Lora:ital,wght@0,600;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
 
@@ -41,9 +41,7 @@
 
         <ul class="nav-links">
           <li><a href="#work" class="nav-link scroll-to">My Work</a></li>
-          <li>
-            <a href="resume.html" class="nav-link">Résumé</a>
-          </li>
+          <li><a href="resume.html" class="nav-link nav-link--resume">Résumé ↗</a></li>
           <li><a href="#contact" class="nav-link scroll-to">Contact</a></li>
         </ul>
 
@@ -59,23 +57,40 @@
 
         <p class="hero-eyebrow">Hey, I'm</p>
         <h1 class="hero-name">
-          <span class="hero-name-word hero-name-word--almond">Wiktoria</span><br>
-          <span class="hero-name-word hero-name-word--rust">Sudak</span>
+          <span class="hero-name-word hero-name-word--almond">Wiktoria </span><span class="hero-name-word hero-name-word--rust">Sudak.</span>
         </h1>
-        <h2 class="hero-title">Junior UX Engineer</h2>
-        <p class="hero-availability-text">Based in France. Open to hybrid &amp; remote opportunities</p>
-        <!-- <hr class="hero-rule"> -->
+
+        <p class="hero-descriptor">
+          A <strong>junior UX Engineer</strong> based in the south of France —
+          designing and building end-to-end, from research to production code.
+        </p>
+
+        <div class="hero-rule"></div>
+
         <div class="hero-cta">
-          <a href="#work" class="btn btn-primary scroll-to">View My Work</a>
+          <div class="hero-avail">
+            <span class="hero-avail-dot"></span>
+            Open to hybrid & remote opportunities.
+          </div>
+          <div class="hero-bottom-sep"></div>
+          <a href="#work" class="hero-btn-primary scroll-to">
+            View my work <span aria-hidden="true">↓</span>
+          </a>
           <a
             href="assets/wiktoria-sudak-resume.pdf"
-            class="btn btn-secondary"
+            class="hero-btn-secondary"
             id="resume-download"
           >Download Résumé</a>
         </div>
 
       </div>
     </section>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
 
 
     <!-- ============================================================
