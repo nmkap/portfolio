@@ -21,7 +21,6 @@
   display: grid;
   grid-template-columns: 360px 1fr;
   border-radius: var(--border-radius);
-  overflow: hidden;
   box-shadow:
     0 4px 12px rgba(28, 27, 24, 0.08),
     0 20px 60px rgba(28, 27, 24, 0.12);
@@ -31,78 +30,68 @@
 /* ── SIDEBAR ── */
 .resume-sidebar {
   background-color: var(--color-bg-dark);
-  padding: 2.5rem 1.75rem 3rem;
+  padding: 4.5rem 2.25rem 3.5rem;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
 }
 
 
 /* ── PHOTO ── */
 .sidebar-photo-wrap {
-  position: relative;
-  width: 150px;
-  height: 150px;
+  width: 190px;
+  height: 190px;
   margin: 0 auto 2rem;
 }
 
-.sidebar-photo-accent {
-  position: absolute;
-  width: 108px;
-  height: 108px;
+.sidebar-photo {
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
-  background-color: var(--color-accent);
-  bottom: -10px;
-  left: -18px;
-  z-index: 0;
-}
-
-.sidebar-photo-placeholder {
-  position: relative;
-  z-index: 1;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.06);
-  border: 2px dashed rgba(255, 255, 255, 0.2);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  color: var(--color-text-on-dark-muted);
-  font-family: var(--font-sans);
-  font-size: 1rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  /* dark gap ring, then accent colour ring */
+  box-shadow:
+    0 0 0 5px var(--color-bg-dark),
+    0 0 0 9px var(--color-accent);
 }
 
 
 /* ── IDENTITY ── */
-.sidebar-identity {
-  margin-bottom: 1.75rem;
-}
-
 .sidebar-name {
   font-family: var(--font-serif);
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   font-style: normal;
-  color: var(--color-text-on-dark-primary);
   line-height: 1.08;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.sidebar-name--almond {
+  color: var(--color-text-on-dark-secondary);
+}
+
+.sidebar-name--rust {
+  color: var(--color-accent);
+}
+
+.sidebar-identity {
+  margin-bottom: 2.25rem;
 }
 
 .sidebar-title-badge {
   display: inline-block;
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
+  font-weight: 700;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--color-text-on-dark-primary);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 0.3rem 0.8rem;
-  border-radius: 4px;
+  color: var(--color-bg-dark);
+  background-color: var(--color-bg-white);
+  padding: 0.35rem 1.1rem 0.35rem 2.25rem;
+  margin-left: -2.25rem;
+  border-radius: 0 100px 100px 0;
 }
 
 
@@ -139,7 +128,7 @@
 
 .contact-list li {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.65rem;
 }
 
@@ -153,6 +142,7 @@
   border-radius: 4px;
   flex-shrink: 0;
   color: var(--color-text-on-dark-secondary);
+  margin-top: 2px;
 }
 
 .contact-text {
@@ -160,7 +150,7 @@
   font-size: 1rem;
   color: var(--color-text-on-dark-secondary);
   line-height: 1.4;
-  word-break: normal;
+  word-break: break-all;
   transition: color var(--transition);
 }
 
@@ -205,7 +195,8 @@ a.contact-text:hover {
 /* ── MAIN CONTENT ── */
 .resume-main {
   background-color: var(--color-bg-white);
-  padding: 3rem 3.25rem 4rem;
+  padding: 4.5rem 3.25rem 4rem;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
 
 
@@ -218,7 +209,7 @@ a.contact-text:hover {
 
 .resume-bio p {
   font-family: var(--font-sans);
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: var(--color-text-primary);
   line-height: 1.8;
   margin-bottom: 1rem;
@@ -231,16 +222,18 @@ a.contact-text:hover {
 
 /* ── SECTION BANNERS ── */
 .resume-section-banner {
-  display: inline-block;
+  display: block;
+  width: fit-content;
   font-family: var(--font-serif);
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--color-text-on-dark-primary);
   background-color: var(--color-bg-dark);
-  padding: 0.5rem 1.4rem;
-  border-radius: 100px;
+  padding: 0.65rem 1.75rem 0.65rem 3.25rem;
+  margin-left: -3.25rem;
+  border-radius: 0 100px 100px 0;
   margin-bottom: 1.75rem;
 }
 
@@ -282,7 +275,7 @@ a.contact-text:hover {
 
 .entry-title {
   font-family: var(--font-serif);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--color-text-primary);
   line-height: 1.25;
@@ -291,7 +284,7 @@ a.contact-text:hover {
 
 .entry-meta {
   font-family: var(--font-sans);
-  font-size: 0.82rem;
+  font-size: 0.94rem;
   color: var(--color-text-muted);
   line-height: 1.5;
   margin-bottom: 0.65rem;
@@ -304,7 +297,7 @@ a.contact-text:hover {
 
 .entry-desc {
   font-family: var(--font-sans);
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--color-text-primary);
   line-height: 1.75;
   margin: 0;
@@ -323,7 +316,7 @@ a.contact-text:hover {
 
 .entry-bullets li {
   font-family: var(--font-sans);
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: var(--color-text-primary);
   line-height: 1.7;
   padding-left: 1rem;
@@ -341,7 +334,7 @@ a.contact-text:hover {
 /* ── RESPONSIVE ── */
 @media (max-width: 960px) {
   .resume-layout {
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 280px 1fr;
   }
 
   .resume-sidebar {
@@ -352,30 +345,113 @@ a.contact-text:hover {
     font-size: 1.75rem;
   }
 
+  .sidebar-heading {
+    font-size: 0.9rem;
+  }
+
+  .contact-text,
+  .sidebar-skills li {
+    font-size: 0.9rem;
+  }
+
+  .sidebar-title-badge {
+    padding-left: 1.4rem;
+    margin-left: -1.4rem;
+  }
+
   .resume-main {
     padding: 2.5rem 2rem 3rem;
+  }
+
+  .resume-section-banner {
+    font-size: 0.9rem;
+    padding-left: 2rem;
+    margin-left: -2rem;
+  }
+
+  .entry-title {
+    font-size: 1.1rem;
+  }
+
+  .entry-meta {
+    font-size: 0.88rem;
+  }
+
+  .resume-bio p,
+  .entry-desc,
+  .entry-bullets li {
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 700px) {
   .resume-wrapper {
-    padding-left: var(--space-sm);
-    padding-right: var(--space-sm);
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .resume-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: 220px 1fr;
+    border-radius: 0;
   }
 
   .resume-sidebar {
-    padding: 2.5rem 1.5rem;
+    padding: 2rem 1.1rem 2.5rem;
+  }
+
+  .sidebar-name {
+    font-size: 1.4rem;
+  }
+
+  .sidebar-title-badge {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    padding-left: 1.1rem;
+    margin-left: -1.1rem;
+  }
+
+  .sidebar-heading {
+    font-size: 0.78rem;
+  }
+
+  .contact-text,
+  .sidebar-skills li,
+  .learning-tag {
+    font-size: 0.78rem;
   }
 
   .sidebar-photo-wrap {
-    margin-bottom: 1.75rem;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 1.5rem;
+  }
+
+  .sidebar-photo {
+    width: 140px;
+    height: 140px;
   }
 
   .resume-main {
-    padding: 2rem 1.5rem 3rem;
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  .resume-section-banner {
+    font-size: 0.82rem;
+    padding-left: 1.25rem;
+    margin-left: -1.25rem;
+  }
+
+  .entry-title {
+    font-size: 1rem;
+  }
+
+  .entry-meta {
+    font-size: 0.8rem;
+  }
+
+  .resume-bio p,
+  .entry-desc,
+  .entry-bullets li {
+    font-size: 0.875rem;
   }
 }
